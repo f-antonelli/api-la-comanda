@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\facultad\\LabApp web Servidor\\Restaurante\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\comandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\comandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\enums\\estadosmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\enums\\estadosmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\enums\\estadospedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\enums\\estadospedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\enums\\sectores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\enums\\sectores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\clasebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\clasebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Mesas.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Mesas.cs",
+              "RelativeDocumentMoniker": "Entities\\Mesas.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Mesas.cs",
+              "RelativeToolTip": "Entities\\Mesas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T00:30:13.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Comandas.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Comandas.cs",
+              "RelativeDocumentMoniker": "Entities\\Comandas.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Comandas.cs",
+              "RelativeToolTip": "Entities\\Comandas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T00:29:36.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EstadosMesa.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\EstadosMesa.cs",
+              "RelativeDocumentMoniker": "Entities\\Enums\\EstadosMesa.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\EstadosMesa.cs",
+              "RelativeToolTip": "Entities\\Enums\\EstadosMesa.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T00:26:57.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EstadosPedido.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\EstadosPedido.cs",
+              "RelativeDocumentMoniker": "Entities\\Enums\\EstadosPedido.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\EstadosPedido.cs",
+              "RelativeToolTip": "Entities\\Enums\\EstadosPedido.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T22:52:58.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pedidos.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Pedidos.cs",
+              "RelativeDocumentMoniker": "Entities\\Pedidos.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Pedidos.cs",
+              "RelativeToolTip": "Entities\\Pedidos.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T22:46:31.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Productos.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Productos.cs",
+              "RelativeDocumentMoniker": "Entities\\Productos.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Productos.cs",
+              "RelativeToolTip": "Entities\\Productos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T22:43:59.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Sectores.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\Sectores.cs",
+              "RelativeDocumentMoniker": "Entities\\Enums\\Sectores.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\Sectores.cs",
+              "RelativeToolTip": "Entities\\Enums\\Sectores.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T22:39:54.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\Roles.cs",
+              "RelativeDocumentMoniker": "Entities\\Enums\\Roles.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\Roles.cs",
+              "RelativeToolTip": "Entities\\Enums\\Roles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T22:34:07.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Entities",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Entities.csproj",
+              "RelativeDocumentMoniker": "Entities\\Entities.csproj",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Entities.csproj",
+              "RelativeToolTip": "Entities\\Entities.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-17T22:33:11.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClaseBase.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\ClaseBase.cs",
+              "RelativeDocumentMoniker": "Entities\\ClaseBase.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\ClaseBase.cs",
+              "RelativeToolTip": "Entities\\ClaseBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T22:31:44.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Empleados.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Empleados.cs",
+              "RelativeDocumentMoniker": "Entities\\Empleados.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Empleados.cs",
+              "RelativeToolTip": "Entities\\Empleados.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T22:30:06.112Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
