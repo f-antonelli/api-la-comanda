@@ -9,15 +9,12 @@ namespace Entities
 {
     internal class Pedidos : ClaseBase
     {
-        //agregar comanda
+        public string Codigo { get; set; }
         public int ComandaId { get; set; }
         public Comandas Comanda { get; set; }
-        public int ProductoId { get; set; }
-        public Productos Producto { get; set; }
-        public int Cantidad { get; set; }
+        public List<Productos> Productos { get; set; }
         public EstadosPedido Estado { get; set; }
         public DateTime FechaCreación { get; set; }
         public DateTime FechaFinalizacion { get; set; }
-        
     }
 }

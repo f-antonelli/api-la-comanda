@@ -8,8 +8,10 @@ namespace Entities.Enums
 {
     public enum Roles
     {
-        Admin,
-        Empleado,
+        Bartender,
+        Cervecero,
+        Cocinero,
+        Mozo,
         Socio
     }
 }

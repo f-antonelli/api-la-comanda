@@ -8,9 +8,8 @@ namespace Entities.Enums
 {
     public enum Sectores
     {
-        Bartender,
-        Cervecero,
-        Cocinero,
-        Mozo
+        Comida,
+        Bebida,
+        Cerveza
     }
 }

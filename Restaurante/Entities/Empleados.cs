@@ -8,6 +8,8 @@ namespace Entities
         public string Usuario { get;set; }
         public string Password { get; set; }
         public Roles Rol { get; set; }
+        public Sectores Sector { get; set; }
+        public DateTime FechaIngreso { get; set; }
 
     }
 }

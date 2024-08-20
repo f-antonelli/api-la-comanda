@@ -10,10 +10,9 @@ namespace Entities
     internal class Productos : ClaseBase
     {
         public Sectores Sector { get; set; }
-        public string Desripcion { get; set; } 
-        public int Stock { get; set; } 
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; } 
+        private int Stock { get; set; } 
         public float Precio { get; set; }
-
-
     }
 }
