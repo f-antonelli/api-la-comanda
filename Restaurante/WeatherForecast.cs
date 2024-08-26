@@ -1,7 +1,11 @@
+using Restaurante.Entities;
+
 namespace Restaurante
 {
     public class WeatherForecast
     {
+        internal Class asd;
+
         public DateTime Date { get; set; }
 
         public int TemperatureC { get; set; }

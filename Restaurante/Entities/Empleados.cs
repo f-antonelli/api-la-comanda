@@ -1,6 +1,6 @@
-﻿using Entities.Enums;
+﻿using Restaurante.Entities.Enums;
 
-namespace Entities
+namespace Restaurante.Entities
 {
     public class Empleados : ClaseBase
     {

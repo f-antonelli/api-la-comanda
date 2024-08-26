@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities
+namespace Restaurante.Entities
 {
-    internal class Comandas : ClaseBase
+    public class Comandas : ClaseBase
     {
         public int MesaId { get; set; }
         public Mesas Mesa { get; set; }

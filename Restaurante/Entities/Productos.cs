@@ -1,13 +1,13 @@
-﻿using Entities.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Restaurante.Entities.Enums;
 
-namespace Entities
+namespace Restaurante.Entities
 {
-    internal class Productos : ClaseBase
+    public class Productos : ClaseBase
     {
         public Sectores Sector { get; set; }
         public string Nombre { get; set; }

@@ -1,13 +1,13 @@
-﻿using Entities.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Restaurante.Entities.Enums;
 
-namespace Entities
+namespace Restaurante.Entities
 {
-    internal class Pedidos : ClaseBase
+    public class Pedidos : ClaseBase
     {
         public string Codigo { get; set; }
         public int ComandaId { get; set; }
