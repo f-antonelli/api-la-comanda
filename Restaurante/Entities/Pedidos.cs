@@ -18,5 +18,6 @@ namespace Restaurante.Entities
         public EstadosPedido Estado { get; set; }
         public DateTime FechaCreación { get; set; }
         public DateTime FechaFinalizacion { get; set; }
+        public TimeSpan TiempoEstimado { get; set; }
     }
 }
