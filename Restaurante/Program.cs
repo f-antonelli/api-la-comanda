@@ -1,6 +1,14 @@
-using Restaurante.Entities;
+using Microsoft.EntityFrameworkCore;
+using Restaurante.Data;
+
+
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+//--------------Services------------------------ | configuracion DB
+builder.Services.AddDbContext<DataContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionStringEF")));
 
 // Add services to the container.
 
@@ -9,9 +17,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
- Empleados unEmpleado = new Empleados();
 
-//Console.WriteLine(unEmpleado.ToString());
 
 
 var app = builder.Build();

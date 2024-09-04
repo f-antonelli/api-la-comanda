@@ -9,9 +9,9 @@ namespace Restaurante.Entities
 {
     public class Productos : ClaseBase
     {
-        public Productos(int stock = 0)
+        public Productos()
         {
-            SetStock(stock);
+            _stock = 0;
         }
         public Sectores Sector { get; set; }
         public string Nombre { get; set; }

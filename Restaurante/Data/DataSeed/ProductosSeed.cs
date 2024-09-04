@@ -10,7 +10,7 @@ namespace Restaurante.Data.Seed
         public void Configure(EntityTypeBuilder<Productos> builder)
         {
             builder.HasData(
-              new Productos(50)  // Stock inicial
+              new Productos  // Stock inicial
               {
                   Id = 1,
                   Sector = Sectores.Comida,
@@ -18,7 +18,7 @@ namespace Restaurante.Data.Seed
                   Descripcion = "Milanesa de carne con dos huevos fritos encima.",
                   Precio = 12.99f
               },
-              new Productos(30) // Stock inicial
+              new Productos // Stock inicial
               {
                   Id = 2,
                   Sector = Sectores.Comida,
@@ -26,7 +26,7 @@ namespace Restaurante.Data.Seed
                   Descripcion = "Dos hamburguesas vegetarianas hechas de garbanzo.",
                   Precio = 9.99f
               },
-              new Productos(100) // Stock inicial
+              new Productos // Stock inicial
               {
                   Id = 3,
                   Sector = Sectores.Cerveza,
@@ -34,7 +34,7 @@ namespace Restaurante.Data.Seed
                   Descripcion = "Botella de cerveza Corona 355ml.",
                   Precio = 3.50f
               },
-              new Productos(20) // Stock inicial
+              new Productos // Stock inicial
               {
                   Id = 4,
                   Sector = Sectores.Bebida,

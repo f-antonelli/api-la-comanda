@@ -55,8 +55,8 @@ namespace Restaurante.Data.Seed
                 new Pedidos
                 {
                     Id = 5,
-                    ComandaId = 4,
-                    ProductoId = 5,
+                    ComandaId = 2,
+                    ProductoId = 4,
                     Cantidad = 2,
                     Estado = EstadosPedido.Finalizado,
                     FechaCreación = new DateTime(2024, 9, 4, 10, 0, 0),
@@ -97,7 +97,7 @@ namespace Restaurante.Data.Seed
                 new Pedidos
                 {
                     Id = 9,
-                    ComandaId = 4,
+                    ComandaId = 3,
                     ProductoId = 4,
                     Cantidad = 4,
                     Estado = EstadosPedido.ListoParaServir,
@@ -109,7 +109,7 @@ namespace Restaurante.Data.Seed
                 {
                     Id = 10,
                     ComandaId = 2,
-                    ProductoId = 5,
+                    ProductoId = 4,
                     Cantidad = 2,
                     Estado = EstadosPedido.ListoParaServir,
                     FechaCreación = new DateTime(2024, 9, 4, 18, 0, 0),
