@@ -30,6 +30,38 @@ namespace Restaurante.Controllers
 
             return Ok(producto); // Devolver el producto
         }
+        [HttpGet("update")]
+        public async Task<ActionResult<Productos>> update(int id)
+        {
+            var producto = await _productoRepository.GetById(id);
+            producto.Nombre = "updATED";
+            _productoRepository.Edit(producto);
+
+
+            return Ok(); // Devolver el producto
+        }
+        [HttpGet("delete")]
+        public async Task<ActionResult<Productos>> delete(int id)
+        {
+            var producto = await _productoRepository.GetById(1);
+
+            _productoRepository.Delete(producto);
+           
+
+            return Ok(); // Devolver el producto
+        }
+        [HttpGet("GetAll")]
+        public async Task<ActionResult<Productos>> GetAll()
+        {
+            var producto = await _productoRepository.GetAll();
+
+            if (producto == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(producto); // Devolver el producto
+        }
 
         [HttpGet("MasVendido")]
         public Task MasVendido()

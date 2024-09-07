@@ -15,5 +15,22 @@ namespace Restaurante.Repository
         {
             return await _context.Productos.Where(x => x.Id == id).FirstOrDefaultAsync();
         }
+        public void Delete(Productos entity)
+        {
+            _context.Productos.Remove(entity);
+            _context.SaveChanges();
+
+        }
+
+        public void Edit(Productos entity)
+        {
+            _context.Productos.Update(entity);
+            _context.SaveChanges();
+        }
+
+        public async Task<List<Productos>> GetAll()
+        {
+            return await _context.Productos.ToListAsync();
+        }
     }
 }
