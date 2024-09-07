@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IBRnOY+TSrE=",
+  "dgSpecHash": "osjvujynMPY=",
   "success": true,
-  "projectFilePath": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Restaurante.csproj",
+  "projectFilePath": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Restaurante.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sebastian\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

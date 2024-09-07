@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Restaurante.Entities;
+using Restaurante.Repository;
 
 namespace Restaurante.Controllers
 {
@@ -6,6 +8,29 @@ namespace Restaurante.Controllers
     [Route("[controller]")]
     public class PedidosController : ControllerBase
     {
+
+        private readonly ProductoRepository _productoRepository;
+
+        // Inyectar el repositorio a través del constructor
+        public PedidosController(ProductoRepository productoRepository)
+        {
+            _productoRepository = productoRepository;
+        }
+
+        // Acción para obtener un producto por ID
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Productos>> GetProductoById(int id)
+        {
+            var producto = await _productoRepository.GetById(id);
+
+            if (producto == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(producto); // Devolver el producto
+        }
+
         [HttpGet("MasVendido")]
         public Task MasVendido()
         {

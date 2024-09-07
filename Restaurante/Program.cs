@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Restaurante.Data;
+using Restaurante.Repository;
 
 
 
@@ -17,7 +18,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+//Repository
+builder.Services.AddScoped<ProductoRepository>();
 
 
 var app = builder.Build();

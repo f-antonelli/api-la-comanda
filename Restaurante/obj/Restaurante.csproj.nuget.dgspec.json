@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Restaurante.csproj": {}
+    "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Restaurante.csproj": {}
   },
   "projects": {
-    "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Restaurante.csproj": {
+    "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Restaurante.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Restaurante.csproj",
+        "projectUniqueName": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Restaurante.csproj",
         "projectName": "Restaurante",
-        "projectPath": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Restaurante.csproj",
+        "projectPath": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Restaurante.csproj",
         "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
-        "outputPath": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\obj\\",
+        "outputPath": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,41 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\facultad\\LabApp web Servidor\\Restaurante\\",
+  "WorkspaceRootPath": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904181143_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Restaurante\\Migrations\\20240904181143_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\restaurante\\restaurante\\data\\dataseed\\pedidosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\data\\dataseed\\pedidosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\restaurante\\restaurante\\data\\dataseed\\productosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\data\\dataseed\\productosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180952_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Restaurante\\Migrations\\20240904180952_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180807_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Restaurante\\Migrations\\20240904180807_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Restaurante\\Migrations\\20240904180242_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\restaurante\\restaurante\\entities\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\entities\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\restaurante\\restaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\restaurante\\restaurante\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\migrations\\20240904181143_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\migrations\\20240904181143_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\data\\dataseed\\pedidosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\data\\dataseed\\pedidosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\data\\dataseed\\productosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\data\\dataseed\\productosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180952_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180807_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\entities\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\entities\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -51,119 +52,125 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PedidosController.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Controllers\\PedidosController.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Controllers\\PedidosController.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Controllers\\PedidosController.cs",
+              "RelativeToolTip": "Restaurante\\Controllers\\PedidosController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T20:56:14.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "20240904181143_Inicial.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904181143_Inicial.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Migrations\\20240904181143_Inicial.cs",
               "RelativeDocumentMoniker": "Restaurante\\Migrations\\20240904181143_Inicial.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904181143_Inicial.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Migrations\\20240904181143_Inicial.cs",
               "RelativeToolTip": "Restaurante\\Migrations\\20240904181143_Inicial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T18:11:43.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "20240904180952_Inicial.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180952_Inicial.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Migrations\\20240904180952_Inicial.cs",
+              "RelativeDocumentMoniker": "..\\Restaurante\\Restaurante\\Migrations\\20240904180952_Inicial.cs",
               "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180952_Inicial.cs",
-              "RelativeToolTip": "Restaurante\\Migrations\\20240904180952_Inicial.cs",
+              "RelativeToolTip": "..\\Restaurante\\Restaurante\\Migrations\\20240904180952_Inicial.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T18:09:52.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T18:09:52.712Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "20240904180807_Inicial.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180807_Inicial.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Migrations\\20240904180807_Inicial.cs",
+              "RelativeDocumentMoniker": "..\\Restaurante\\Restaurante\\Migrations\\20240904180807_Inicial.cs",
               "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180807_Inicial.cs",
-              "RelativeToolTip": "Restaurante\\Migrations\\20240904180807_Inicial.cs",
+              "RelativeToolTip": "..\\Restaurante\\Restaurante\\Migrations\\20240904180807_Inicial.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T18:08:07.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20240904180242_Initial.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Migrations\\20240904180242_Initial.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs",
-              "RelativeToolTip": "Restaurante\\Migrations\\20240904180242_Initial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T18:02:42.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T18:08:07.305Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "20240904180242_Initial.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs",
+              "RelativeDocumentMoniker": "..\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs",
+              "RelativeToolTip": "..\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T18:02:42.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Program.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Program.cs",
               "RelativeDocumentMoniker": "Restaurante\\Program.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Program.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Program.cs",
               "RelativeToolTip": "Restaurante\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T17:57:02.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Productos.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Entities\\Productos.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Entities\\Productos.cs",
               "RelativeDocumentMoniker": "Restaurante\\Entities\\Productos.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Entities\\Productos.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Entities\\Productos.cs",
               "RelativeToolTip": "Restaurante\\Entities\\Productos.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwA8AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T17:47:44.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T17:47:44.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ProductosSeed.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Data\\DataSeed\\ProductosSeed.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataSeed\\ProductosSeed.cs",
               "RelativeDocumentMoniker": "Restaurante\\Data\\DataSeed\\ProductosSeed.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Data\\DataSeed\\ProductosSeed.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataSeed\\ProductosSeed.cs",
               "RelativeToolTip": "Restaurante\\Data\\DataSeed\\ProductosSeed.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAgwCQAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T17:49:04.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T17:49:04.519Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DataContext.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Data\\DataContext.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataContext.cs",
               "RelativeDocumentMoniker": "Restaurante\\Data\\DataContext.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Data\\DataContext.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataContext.cs",
               "RelativeToolTip": "Restaurante\\Data\\DataContext.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAowB4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T17:35:02.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T17:35:02.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PedidosSeed.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Data\\DataSeed\\PedidosSeed.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataSeed\\PedidosSeed.cs",
               "RelativeDocumentMoniker": "Restaurante\\Data\\DataSeed\\PedidosSeed.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Data\\DataSeed\\PedidosSeed.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataSeed\\PedidosSeed.cs",
               "RelativeToolTip": "Restaurante\\Data\\DataSeed\\PedidosSeed.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAIAwwBEAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T17:25:10.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T17:25:10.259Z"
             }
           ]
         }
