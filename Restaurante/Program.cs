@@ -23,6 +23,7 @@ builder.Services.AddScoped<ProductoRepository>();
 builder.Services.AddScoped<PedidoRepository>();
 builder.Services.AddScoped<MesaRepository>();
 builder.Services.AddScoped<EmpleadoRepository>();
+builder.Services.AddScoped<ComandaRepository>();
 
 
 var app = builder.Build();

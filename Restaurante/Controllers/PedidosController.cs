@@ -9,19 +9,19 @@ namespace Restaurante.Controllers
     public class PedidosController : ControllerBase
     {
 
-        private readonly EmpleadoRepository _empleadoRepository;
+        private readonly ComandaRepository _comandaRepository;
 
         // Inyectar el repositorio a través del constructor
-        public PedidosController(EmpleadoRepository empleadoRepository)
+        public PedidosController(ComandaRepository comandaRepository)
         {
-            _empleadoRepository = empleadoRepository;
+            _comandaRepository = comandaRepository;
         }
 
         // Acción para obtener un producto por ID
         [HttpGet("{id}")]
         public async Task<ActionResult<Productos>> GetProductoById(int id)
         {
-            var producto = await _empleadoRepository.GetById(id);
+            var producto = await _comandaRepository.GetById(id);
 
             if (producto == null)
             {
@@ -35,9 +35,11 @@ namespace Restaurante.Controllers
         [HttpGet("update")]
         public async Task<ActionResult<Productos>> update(int id)
         {
-            var pedido = await _empleadoRepository.GetById(id);
-            pedido.Nombre = "carmelo";
-            await _empleadoRepository.Edit(pedido);
+            var pedido = await _comandaRepository.GetById(id);
+            pedido.NombreCliente = "Rojelio";
+
+
+            await _comandaRepository.Edit(pedido);
 
 
             return Ok(); // Devolver el producto
@@ -45,11 +47,10 @@ namespace Restaurante.Controllers
         [HttpGet("add")]
         public async Task<ActionResult<Empleados>> add()
         {
-            var newProd = new Empleados();
-            newProd.Nombre = "asd";
-            newProd.Password = "asd";
-            newProd.Usuario = "asd";
-            await _empleadoRepository.Add(newProd);
+            var newProd = new Comandas();
+            newProd.MesaId = 2;
+            newProd.NombreCliente = "asd";
+            await _comandaRepository.Add(newProd);
            
 
 
@@ -58,9 +59,9 @@ namespace Restaurante.Controllers
         [HttpGet("delete")]
         public async Task<ActionResult<Productos>> delete(int id)
         {
-            var producto = await _empleadoRepository.GetById(id);
+            var producto = await _comandaRepository.GetById(id);
 
-            await _empleadoRepository.Delete(producto);
+            await _comandaRepository.Delete(producto);
            
 
             return Ok(); // Devolver el producto
@@ -68,7 +69,7 @@ namespace Restaurante.Controllers
         [HttpGet("GetAll")]
         public async Task<ActionResult<Productos>> GetAll()
         {
-            var producto = await _empleadoRepository.GetAll();
+            var producto = await _comandaRepository.GetAll();
 
             if (producto == null)
             {
