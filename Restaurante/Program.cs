@@ -20,6 +20,7 @@ builder.Services.AddSwaggerGen();
 
 //Repository
 builder.Services.AddScoped<ProductoRepository>();
+builder.Services.AddScoped<PedidoRepository>();
 
 
 var app = builder.Build();
