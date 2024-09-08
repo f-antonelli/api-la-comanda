@@ -40,6 +40,19 @@ namespace Restaurante.Controllers
 
             return Ok(); // Devolver el producto
         }
+        [HttpGet("add")]
+        public async Task<ActionResult<Productos>> add()
+        {
+            var newProd = new Productos();
+            newProd.Nombre = "a";
+            newProd.Descripcion = "a";
+            newProd.SetStock(10);
+             _productoRepository.Add(newProd);
+           
+
+
+            return Ok(); // Devolver el producto
+        }
         [HttpGet("delete")]
         public async Task<ActionResult<Productos>> delete(int id)
         {

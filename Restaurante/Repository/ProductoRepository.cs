@@ -32,5 +32,12 @@ namespace Restaurante.Repository
         {
             return await _context.Productos.ToListAsync();
         }
+
+        public async void Add(Productos entity) {
+
+            await _context.Productos.AddAsync(entity);
+            _context.SaveChanges();
+
+        }
     }
 }
