@@ -35,7 +35,7 @@ namespace Restaurante.Controllers
         {
             var producto = await _productoRepository.GetById(id);
             producto.Nombre = "updATED";
-            _productoRepository.Edit(producto);
+            await _productoRepository.Edit(producto);
 
 
             return Ok(); // Devolver el producto
@@ -47,7 +47,7 @@ namespace Restaurante.Controllers
             newProd.Nombre = "a";
             newProd.Descripcion = "a";
             newProd.SetStock(10);
-             _productoRepository.Add(newProd);
+            await _productoRepository.Add(newProd);
            
 
 

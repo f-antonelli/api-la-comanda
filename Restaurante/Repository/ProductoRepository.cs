@@ -15,17 +15,17 @@ namespace Restaurante.Repository
         {
             return await _context.Productos.Where(x => x.Id == id).FirstOrDefaultAsync();
         }
-        public void Delete(Productos entity)
+        public async Task Delete(Productos entity)
         {
             _context.Productos.Remove(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
         }
 
-        public void Edit(Productos entity)
+        public async Task Edit(Productos entity)
         {
             _context.Productos.Update(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
         public async Task<List<Productos>> GetAll()
@@ -33,10 +33,10 @@ namespace Restaurante.Repository
             return await _context.Productos.ToListAsync();
         }
 
-        public async void Add(Productos entity) {
+        public async Task Add(Productos entity) {
 
             await _context.Productos.AddAsync(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
         }
     }
