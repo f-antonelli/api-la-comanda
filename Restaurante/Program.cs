@@ -21,6 +21,7 @@ builder.Services.AddSwaggerGen();
 //Repository
 builder.Services.AddScoped<ProductoRepository>();
 builder.Services.AddScoped<PedidoRepository>();
+builder.Services.AddScoped<MesaRepository>();
 
 
 var app = builder.Build();
