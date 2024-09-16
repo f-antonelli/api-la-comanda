@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Restaurante.Dto.Pedido;
+using Restaurante.Entities;
 
 namespace Restaurante
 {
@@ -6,6 +8,7 @@ namespace Restaurante
     {
         public AutomapperProfile()
         {
+            CreateMap<Pedidos, PedidoCreateRequestDto>();
         }
     }
 }

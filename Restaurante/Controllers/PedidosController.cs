@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Restaurante.Dto.Pedido;
 using Restaurante.Entities;
 using Restaurante.Repository;
+using Restaurante.Services.Interfaces;
 
 namespace Restaurante.Controllers
 {
@@ -8,76 +10,80 @@ namespace Restaurante.Controllers
     [Route("[controller]")]
     public class PedidosController : ControllerBase
     {
+        private readonly IPedidosService _pedidosService;
 
-        private readonly ComandaRepository _comandaRepository;
-
-        // Inyectar el repositorio a través del constructor
-        public PedidosController(ComandaRepository comandaRepository)
+        public PedidosController(IPedidosService pedidosService)
         {
-            _comandaRepository = comandaRepository;
+            _pedidosService = pedidosService;
         }
 
         // Acción para obtener un producto por ID
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Productos>> GetProductoById(int id)
-        {
-            var producto = await _comandaRepository.GetById(id);
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<Productos>> GetProductoById(int id)
+        //{
+        //    var producto = await _comandaRepository.GetById(id);
 
-            if (producto == null)
-            {
-                return NotFound();
-            }
+        //    if (producto == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return Ok(producto); // Devolver el producto
-        }
+        //    return Ok(producto); // Devolver el producto
+        //}
 
    
-        [HttpGet("update")]
-        public async Task<ActionResult<Productos>> update(int id)
+        //[HttpGet("update")]
+        //public async Task<ActionResult<Productos>> update(int id)
+        //{
+        //    var pedido = await _comandaRepository.GetById(id);
+        //    pedido.NombreCliente = "Rojelio";
+
+
+        //    await _comandaRepository.Edit(pedido);
+
+
+        //    return Ok(); // Devolver el producto
+        //}
+
+        [HttpPost("add")]
+        public async Task<ActionResult<PedidoResponseDto>> CreatePedido(PedidoCreateRequestDto pedidoCreateDto)
         {
-            var pedido = await _comandaRepository.GetById(id);
-            pedido.NombreCliente = "Rojelio";
-
-
-            await _comandaRepository.Edit(pedido);
-
-
-            return Ok(); // Devolver el producto
-        }
-        [HttpGet("add")]
-        public async Task<ActionResult<Empleados>> add()
-        {
-            var newProd = new Comandas();
-            newProd.MesaId = 2;
-            newProd.NombreCliente = "asd";
-            await _comandaRepository.Add(newProd);
-           
-
-
-            return Ok(); // Devolver el producto
-        }
-        [HttpGet("delete")]
-        public async Task<ActionResult<Productos>> delete(int id)
-        {
-            var producto = await _comandaRepository.GetById(id);
-
-            await _comandaRepository.Delete(producto);
-           
-
-            return Ok(); // Devolver el producto
-        }
-        [HttpGet("GetAll")]
-        public async Task<ActionResult<Productos>> GetAll()
-        {
-            var producto = await _comandaRepository.GetAll();
-
-            if (producto == null)
+            try
             {
-                return NotFound();
-            }
+                var result = await _pedidosService.Create(pedidoCreateDto);
 
-            return Ok(producto); // Devolver el producto
+                if (result != null)
+                    return Ok(true);
+
+                return BadRequest(false);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
+        //[HttpGet("delete")]
+        //public async Task<ActionResult<Productos>> delete(int id)
+        //{
+        //    var producto = await _comandaRepository.GetById(id);
+
+        //    await _comandaRepository.Delete(producto);
+           
+
+        //    return Ok(); // Devolver el producto
+        //}
+        //[HttpGet("GetAll")]
+        //public async Task<ActionResult<Productos>> GetAll()
+        //{
+        //    var producto = await _comandaRepository.GetAll();
+
+        //    if (producto == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return Ok(producto); // Devolver el producto
+        //}
 
         [HttpGet("MasVendido")]
         public Task MasVendido()
