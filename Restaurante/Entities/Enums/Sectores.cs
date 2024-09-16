@@ -10,6 +10,7 @@ namespace Restaurante.Entities.Enums
     {
         Comida,
         Bebida,
-        Cerveza
+        Cerveza,
+        Otro
     }
 }

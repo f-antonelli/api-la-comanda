@@ -9,7 +9,6 @@ namespace Restaurante.Entities
 {
     public class Mesas : ClaseBase
     {
-        public int Nombre {  get; set; }
         public string Codigo { get; set; }
         public EstadosMesa Estado { get; set; }
     }

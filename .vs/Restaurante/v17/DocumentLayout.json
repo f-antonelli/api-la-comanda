@@ -1,50 +1,63 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\facultad\\LabApp web Servidor\\Restaurante\\",
+  "WorkspaceRootPath": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\repository\\comandarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\repository\\comandarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\repository\\productorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\repository\\productorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\comandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\comandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\repository\\empleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\repository\\empleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\enums\\estadosmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\enums\\estadosmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\repository\\mesarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\repository\\mesarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\enums\\estadospedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\enums\\estadospedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\repository\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\repository\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\enums\\sectores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\enums\\sectores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\data\\dataseed\\pedidosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\data\\dataseed\\pedidosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\clasebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\clasebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\entities\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\entities\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\migrations\\20240904181143_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\migrations\\20240904181143_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|d:\\facultad\\labapp web servidor\\restaurante\\entities\\entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7EDEA1D6-3E96-4131-BAA3-63A42144E4DC}|Entities\\Entities.csproj|solutionrelative:entities\\entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\data\\dataseed\\productosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\data\\dataseed\\productosseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180952_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180807_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,149 +72,188 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Mesas.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Mesas.cs",
-              "RelativeDocumentMoniker": "Entities\\Mesas.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Mesas.cs",
-              "RelativeToolTip": "Entities\\Mesas.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Title": "ComandaRepository.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\ComandaRepository.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Repository\\ComandaRepository.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\ComandaRepository.cs",
+              "RelativeToolTip": "Restaurante\\Repository\\ComandaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T00:30:13.495Z",
+              "WhenOpened": "2024-09-08T20:36:08.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Comandas.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Comandas.cs",
-              "RelativeDocumentMoniker": "Entities\\Comandas.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Comandas.cs",
-              "RelativeToolTip": "Entities\\Comandas.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
+              "Title": "EmpleadoRepository.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\EmpleadoRepository.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Repository\\EmpleadoRepository.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\EmpleadoRepository.cs",
+              "RelativeToolTip": "Restaurante\\Repository\\EmpleadoRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T00:29:36.76Z",
+              "WhenOpened": "2024-09-08T20:29:59.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "EstadosMesa.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\EstadosMesa.cs",
-              "RelativeDocumentMoniker": "Entities\\Enums\\EstadosMesa.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\EstadosMesa.cs",
-              "RelativeToolTip": "Entities\\Enums\\EstadosMesa.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Title": "MesaRepository.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\MesaRepository.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Repository\\MesaRepository.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\MesaRepository.cs",
+              "RelativeToolTip": "Restaurante\\Repository\\MesaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T00:26:57.617Z",
+              "WhenOpened": "2024-09-08T20:21:26.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "EstadosPedido.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\EstadosPedido.cs",
-              "RelativeDocumentMoniker": "Entities\\Enums\\EstadosPedido.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\EstadosPedido.cs",
-              "RelativeToolTip": "Entities\\Enums\\EstadosPedido.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
+              "Title": "PedidoRepository.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\PedidoRepository.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Repository\\PedidoRepository.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\PedidoRepository.cs",
+              "RelativeToolTip": "Restaurante\\Repository\\PedidoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T22:52:58.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-08T20:13:19.214Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pedidos.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Pedidos.cs",
-              "RelativeDocumentMoniker": "Entities\\Pedidos.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Pedidos.cs",
-              "RelativeToolTip": "Entities\\Pedidos.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "DocumentIndex": 3,
+              "Title": "ProductoRepository.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\ProductoRepository.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Repository\\ProductoRepository.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\ProductoRepository.cs",
+              "RelativeToolTip": "Restaurante\\Repository\\ProductoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T22:46:31.378Z",
+              "WhenOpened": "2024-09-07T20:58:51.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Productos.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Productos.cs",
-              "RelativeDocumentMoniker": "Entities\\Productos.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Productos.cs",
-              "RelativeToolTip": "Entities\\Productos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAWAAAA",
+              "Title": "PedidosController.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Controllers\\PedidosController.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Controllers\\PedidosController.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Controllers\\PedidosController.cs",
+              "RelativeToolTip": "Restaurante\\Controllers\\PedidosController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwCYAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T22:43:59.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Sectores.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\Sectores.cs",
-              "RelativeDocumentMoniker": "Entities\\Enums\\Sectores.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\Sectores.cs",
-              "RelativeToolTip": "Entities\\Enums\\Sectores.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T22:39:54.119Z",
+              "WhenOpened": "2024-09-07T20:56:14.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\Roles.cs",
-              "RelativeDocumentMoniker": "Entities\\Enums\\Roles.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Enums\\Roles.cs",
-              "RelativeToolTip": "Entities\\Enums\\Roles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAANAAAA",
+              "Title": "20240904181143_Inicial.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Migrations\\20240904181143_Inicial.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Migrations\\20240904181143_Inicial.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Migrations\\20240904181143_Inicial.cs",
+              "RelativeToolTip": "Restaurante\\Migrations\\20240904181143_Inicial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T22:34:07.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T18:11:43.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Entities",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Entities.csproj",
-              "RelativeDocumentMoniker": "Entities\\Entities.csproj",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Entities.csproj",
-              "RelativeToolTip": "Entities\\Entities.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-17T22:33:11.804Z",
+              "DocumentIndex": 11,
+              "Title": "20240904180952_Inicial.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180952_Inicial.cs",
+              "RelativeDocumentMoniker": "..\\Restaurante\\Restaurante\\Migrations\\20240904180952_Inicial.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180952_Inicial.cs",
+              "RelativeToolTip": "..\\Restaurante\\Restaurante\\Migrations\\20240904180952_Inicial.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T18:09:52.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240904180807_Inicial.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180807_Inicial.cs",
+              "RelativeDocumentMoniker": "..\\Restaurante\\Restaurante\\Migrations\\20240904180807_Inicial.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180807_Inicial.cs",
+              "RelativeToolTip": "..\\Restaurante\\Restaurante\\Migrations\\20240904180807_Inicial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T18:08:07.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240904180242_Initial.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs",
+              "RelativeDocumentMoniker": "..\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs",
+              "RelativeToolTip": "..\\Restaurante\\Restaurante\\Migrations\\20240904180242_Initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T18:02:42.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Program.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Program.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Program.cs",
+              "RelativeToolTip": "Restaurante\\Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:57:02.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ClaseBase.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\ClaseBase.cs",
-              "RelativeDocumentMoniker": "Entities\\ClaseBase.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\ClaseBase.cs",
-              "RelativeToolTip": "Entities\\ClaseBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Title": "Productos.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Entities\\Productos.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Entities\\Productos.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Entities\\Productos.cs",
+              "RelativeToolTip": "Restaurante\\Entities\\Productos.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwA8AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T22:31:44.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "WhenOpened": "2024-09-04T17:47:44.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Empleados.cs",
-              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Empleados.cs",
-              "RelativeDocumentMoniker": "Entities\\Empleados.cs",
-              "ToolTip": "D:\\facultad\\LabApp web Servidor\\Restaurante\\Entities\\Empleados.cs",
-              "RelativeToolTip": "Entities\\Empleados.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "DocumentIndex": 10,
+              "Title": "ProductosSeed.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataSeed\\ProductosSeed.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Data\\DataSeed\\ProductosSeed.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataSeed\\ProductosSeed.cs",
+              "RelativeToolTip": "Restaurante\\Data\\DataSeed\\ProductosSeed.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwCQAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T22:30:06.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T17:49:04.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Data\\DataContext.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataContext.cs",
+              "RelativeToolTip": "Restaurante\\Data\\DataContext.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAowB4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:35:02.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PedidosSeed.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataSeed\\PedidosSeed.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Data\\DataSeed\\PedidosSeed.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\DataSeed\\PedidosSeed.cs",
+              "RelativeToolTip": "Restaurante\\Data\\DataSeed\\PedidosSeed.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAIA9wBEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:25:10.259Z"
             }
           ]
         }
