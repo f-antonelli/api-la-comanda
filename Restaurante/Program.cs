@@ -28,7 +28,7 @@ builder.Services.AddScoped<IPedidosService, PedidosService>();
 
 //Repository
 builder.Services.AddScoped<ProductoRepository>();
-builder.Services.AddScoped<PedidoRepository>();
+builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<MesaRepository>();
 builder.Services.AddScoped<EmpleadoRepository>();
 builder.Services.AddScoped<ComandaRepository>();

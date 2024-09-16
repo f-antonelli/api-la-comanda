@@ -8,7 +8,8 @@ namespace Restaurante
     {
         public AutomapperProfile()
         {
-            CreateMap<Pedidos, PedidoCreateRequestDto>();
+            CreateMap<PedidoCreateRequestDto, Pedidos>();
+            CreateMap<Pedidos, PedidoResponseDto>();
         }
     }
 }
