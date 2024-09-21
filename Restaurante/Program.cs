@@ -2,6 +2,8 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Restaurante.Data;
 using Restaurante.Repository;
+using AutoMapper;
+using Restaurante.Profiles;
 using Microsoft.Extensions.DependencyInjection;
 
 
@@ -26,6 +28,7 @@ builder.Services.AddScoped<PedidoRepository>();
 builder.Services.AddScoped<MesaRepository>();
 builder.Services.AddScoped<EmpleadoRepository>();
 builder.Services.AddScoped<ComandaRepository>();
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 
 var app = builder.Build();
