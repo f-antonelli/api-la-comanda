@@ -23,19 +23,19 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DataContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionStringEF")));
-//Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 //Services
 builder.Services.AddScoped<IPedidosService, PedidosService>();
+builder.Services.AddScoped<IEmpleadosService, EmpleadosService>();
 
 //Repository
 builder.Services.AddScoped<ProductoRepository>();
 builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<MesaRepository>();
-builder.Services.AddScoped<EmpleadoRepository>();
+builder.Services.AddScoped<IEmpleadoRepository, EmpleadoRepository>();
 builder.Services.AddScoped<ComandaRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(x => new UnitOfWork(x.GetRequiredService<DataContext>(),
-    x.GetRequiredService<IPedidoRepository>()));
+    x.GetRequiredService<IPedidoRepository>(), x.GetRequiredService<IEmpleadoRepository>()));
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 

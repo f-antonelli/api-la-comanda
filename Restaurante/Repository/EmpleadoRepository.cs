@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Restaurante.Data;
 using Restaurante.Entities;
+using Restaurante.Repository.Interfaces;
 
 namespace Restaurante.Repository
 {
-    public class EmpleadoRepository
+    public class EmpleadoRepository : IEmpleadoRepository
     {
         private readonly DataContext _context;
         public EmpleadoRepository(DataContext context) {
@@ -15,14 +16,14 @@ namespace Restaurante.Repository
         {
             return await _context.Empleados.Where(x => x.Id == id).FirstOrDefaultAsync();
         }
-        public async Task Delete(Empleados entity)
+        public async void Delete(Empleados entity)
         {
             _context.Empleados.Remove(entity);
             await _context.SaveChangesAsync();
 
         }
 
-        public async Task Edit(Empleados entity)
+        public async void Edit(Empleados entity)
         {
             _context.Empleados.Update(entity);
             await _context.SaveChangesAsync();
