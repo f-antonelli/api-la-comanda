@@ -7,7 +7,7 @@ namespace Restaurante.Services.Interfaces
     public interface IPedidosService
     {
         Task<PedidoResponseDto> Create(PedidoCreateRequestDto pedidoCreateDto);
-        Pedidos Delete(PedidosDto pedidoDto);
+        Task Delete(string id);
         Task Update(string id, PedidosDto pedidoDto);
         Task<IEnumerable<Pedidos>> GetAll();
         Task<Pedidos> GetById(string id);

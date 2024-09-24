@@ -71,17 +71,15 @@ namespace Restaurante.Controllers
             }
         }
 
-        [HttpDelete("delete")]
-        public ActionResult<PedidosDto> Delete(PedidosDto pedidoDto)
+        [HttpDelete("delete/{id}")]
+        public async Task<ActionResult<PedidosDto>> Delete(string id)
         {
             try
             {
-                var pedido = _pedidosService.Delete(pedidoDto);
+                await _pedidosService.Delete(id);
 
-                if (pedido != null)
+            
                     return Ok(true);
-
-                return BadRequest(false);
             }
             catch (Exception ex)
             {

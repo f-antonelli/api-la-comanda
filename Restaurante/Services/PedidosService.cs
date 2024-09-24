@@ -32,11 +32,16 @@ namespace Restaurante.Services
            return _mapper.Map<PedidoResponseDto>(pedido);
         }
 
-        public Pedidos Delete(PedidosDto pedidoDto)
+        public async Task Delete(string id)
         {
-            var pedido = _mapper.Map<Pedidos>(pedidoDto);
+            var pedido = await _unitOfWork.PedidoRepository.GetById(int.Parse(id));
+
+            if (pedido == null)
+            {
+                throw new Exception("El pedido no existe.");
+            }
+
             _unitOfWork.PedidoRepository.Delete(pedido);
-            return pedido;
         }
 
         public async Task Update(string id, PedidosDto pedidoDto)
