@@ -2,6 +2,7 @@
 using Restaurante.Entities;
 using Restaurante.DTo;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using Restaurante.DTo.Empleados;
 namespace Restaurante.Profiles
 
 {

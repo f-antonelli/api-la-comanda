@@ -1,5 +1,6 @@
 ﻿using Restaurante.Dto.Pedido;
 using Restaurante.DTo;
+using Restaurante.DTo.Empleados;
 using Restaurante.Entities;
 
 namespace Restaurante.Services.Interfaces
@@ -10,5 +11,6 @@ namespace Restaurante.Services.Interfaces
         Task<Empleados> GetById(string id);
         Task<Empleados> Create(EmpleadosDto empleadosDto);
         Task Delete(string id);
+        Task<IEnumerable<EmpleadosIngresoDto>> EmpleadosIngreso();
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Restaurante.Dto.Pedido;
-using Restaurante.DTo;
+using Restaurante.DTo.Empleados;
 using Restaurante.Entities;
 using Restaurante.Services;
 using Restaurante.Services.Interfaces;
@@ -85,10 +85,17 @@ namespace Restaurante.Controllers
 
         }
 
-        [HttpGet("DiasHorarios")]
-        public Task GetDiasHorarios()
+        [HttpGet("fechaIngreso")]
+        public async Task<ActionResult<Productos>> GetEmpleadoIngreso()
         {
-            throw new NotImplementedException();
+            var empleados = await _empleadosService.EmpleadosIngreso();
+
+            if (empleados == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(empleados);
         }
         [HttpGet("OperacionesPorSector")]
         public Task OperacionesPorSector()

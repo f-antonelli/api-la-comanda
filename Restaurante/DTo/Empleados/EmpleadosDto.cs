@@ -1,6 +1,6 @@
 ﻿using Restaurante.Entities.Enums;
 
-namespace Restaurante.DTo
+namespace Restaurante.DTo.Empleados
 {
     public class EmpleadosDto
     {

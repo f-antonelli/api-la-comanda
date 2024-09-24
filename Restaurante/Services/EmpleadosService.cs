@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Restaurante.Dto.Pedido;
 using Restaurante.DTo;
+using Restaurante.DTo.Empleados;
 using Restaurante.Entities;
 using Restaurante.Entities.Enums;
 using Restaurante.Services.Interfaces;
@@ -55,6 +56,20 @@ namespace Restaurante.Services
             }
 
             _unitOfWork.EmpleadoRepository.Delete(empleado);
+        }
+
+        public async Task<IEnumerable<EmpleadosIngresoDto>> EmpleadosIngreso()
+        {
+            var empleados = await _unitOfWork.EmpleadoRepository.GetAll();
+
+            var empleadosDto = empleados.Select(e => new EmpleadosIngresoDto
+            {
+                Id = e.Id,
+                Nombre = e.Nombre,
+                FechaIngreso = e.FechaIngreso
+            }).ToList();
+
+            return empleadosDto;
         }
     }
 }
