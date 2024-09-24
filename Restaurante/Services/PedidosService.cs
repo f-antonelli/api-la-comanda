@@ -76,5 +76,23 @@ namespace Restaurante.Services
             return _mapper.Map<Pedidos>(pedido);
         }
 
+        public async Task<IEnumerable<PedidosDto>> Top5ProductosMasVendidos()
+        {
+            var pedidos = await _unitOfWork.PedidoRepository.GetAll();
+
+            var productosMasVendidos = pedidos
+              .GroupBy(p => p.ProductoId)
+              .Select(g => new PedidosDto
+              {
+                  ProductoId = g.Key,                
+                  Cantidad = g.Sum(p => p.Cantidad) 
+              })
+              .OrderByDescending(x => x.Cantidad) 
+              .Take(5)                             
+              .ToList();
+
+            return productosMasVendidos;
+        }
+
     }
 }
