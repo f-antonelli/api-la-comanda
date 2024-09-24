@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Restaurante.Dto.Pedido;
+using Restaurante.DTo;
 using Restaurante.Entities;
 using Restaurante.Repository;
 using Restaurante.Services.Interfaces;
@@ -17,33 +18,40 @@ namespace Restaurante.Controllers
             _pedidosService = pedidosService;
         }
 
-        // Acción para obtener un producto por ID
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<Productos>> GetProductoById(int id)
-        //{
-        //    var producto = await _comandaRepository.GetById(id);
+       [HttpGet("{id}")]
+        public async Task<ActionResult<Pedidos>> GetPedidoById(string id)
+        {
+            try
+            {
+                var pedido = await _pedidosService.GetById(id);
 
-        //    if (producto == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return Ok(producto); // Devolver el producto
-        //}
-
-   
-        //[HttpGet("update")]
-        //public async Task<ActionResult<Productos>> update(int id)
-        //{
-        //    var pedido = await _comandaRepository.GetById(id);
-        //    pedido.NombreCliente = "Rojelio";
+                if (pedido == null)
+                {
+                    return NotFound();
+                }
+                return Ok(pedido);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
 
-        //    await _comandaRepository.Edit(pedido);
+        [HttpPut("update/{id}")]
+        public async Task<ActionResult<Productos>> update(string id, PedidosDto pedidoDto)
+        {
+            try
+            {
+                await _pedidosService.Update(id, pedidoDto);
+                return Ok(true);
 
-
-        //    return Ok(); // Devolver el producto
-        //}
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
         [HttpPost("add")]
         public async Task<ActionResult<PedidoResponseDto>> CreatePedido(PedidoCreateRequestDto pedidoCreateDto)
@@ -62,43 +70,37 @@ namespace Restaurante.Controllers
                 throw;
             }
         }
-        //[HttpGet("delete")]
-        //public async Task<ActionResult<Productos>> delete(int id)
-        //{
-        //    var producto = await _comandaRepository.GetById(id);
 
-        //    await _comandaRepository.Delete(producto);
-           
-
-        //    return Ok(); // Devolver el producto
-        //}
-        //[HttpGet("GetAll")]
-        //public async Task<ActionResult<Productos>> GetAll()
-        //{
-        //    var producto = await _comandaRepository.GetAll();
-
-        //    if (producto == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return Ok(producto); // Devolver el producto
-        //}
-
-        [HttpGet("MasVendido")]
-        public Task MasVendido()
+        [HttpDelete("delete")]
+        public ActionResult<PedidosDto> Delete(PedidosDto pedidoDto)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var pedido = _pedidosService.Delete(pedidoDto);
+
+                if (pedido != null)
+                    return Ok(true);
+
+                return BadRequest(false);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
-        [HttpGet("MenosVendido")]
-        public Task MenosVendido()
+
+        [HttpGet("getAll")]
+        public async Task<ActionResult<Productos>> GetAll()
         {
-            throw new NotImplementedException();
-        }
-        [HttpGet("EntregadoFueraDeTiempo")]
-        public Task EntregadoFueraDeTiempo()
-        {
-            throw new NotImplementedException();
+            var productos = await _pedidosService.GetAll();
+
+            if (productos == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(productos);
         }
     }
 }

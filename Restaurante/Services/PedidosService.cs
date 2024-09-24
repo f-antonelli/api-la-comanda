@@ -52,11 +52,23 @@ namespace Restaurante.Services
             _unitOfWork.PedidoRepository.Edit(pedido);
         }
 
-        public async Task<IEnumerable<PedidosDto>> GetAll()
+        public async Task<IEnumerable<Pedidos>> GetAll()
         {
             var pedidos = await _unitOfWork.PedidoRepository.GetAll();
-            var pedidosDto = _mapper.Map<IEnumerable<PedidosDto>>(pedidos);
-            return pedidosDto;
+            return _mapper.Map<IEnumerable<Pedidos>>(pedidos);
+         
+        }
+
+        public async Task<Pedidos> GetById(string id)
+        {
+            var pedido = await _unitOfWork.PedidoRepository.GetById(int.Parse(id));
+
+            if (pedido == null)
+            {
+                throw new Exception("El pedido no existe.");
+            }
+
+            return _mapper.Map<Pedidos>(pedido);
         }
 
     }
