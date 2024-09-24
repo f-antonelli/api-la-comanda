@@ -2,6 +2,8 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Restaurante.Data;
 using Restaurante.Repository;
+using AutoMapper;
+using Restaurante.Profiles;
 using Microsoft.Extensions.DependencyInjection;
 using Restaurante;
 using Restaurante.Repository.Interfaces;
@@ -21,7 +23,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DataContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionStringEF")));
-builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+//Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 //Services
 builder.Services.AddScoped<IPedidosService, PedidosService>();
@@ -34,6 +36,7 @@ builder.Services.AddScoped<EmpleadoRepository>();
 builder.Services.AddScoped<ComandaRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(x => new UnitOfWork(x.GetRequiredService<DataContext>(),
     x.GetRequiredService<IPedidoRepository>()));
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 
 var app = builder.Build();

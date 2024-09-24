@@ -20,7 +20,6 @@ namespace Restaurante.Repository
         {
             _context.Pedidos.Remove(entity);
             await _context.SaveChangesAsync();
-
         }
 
         public async void Edit(Pedidos entity)
