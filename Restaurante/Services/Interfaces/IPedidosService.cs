@@ -12,5 +12,6 @@ namespace Restaurante.Services.Interfaces
         Task<IEnumerable<Pedidos>> GetAll();
         Task<Pedidos> GetById(string id);
         Task<IEnumerable<PedidosDto>> Top5ProductosMasVendidos();
+        Task<IEnumerable<PedidosDto>> Top5ProductosMenosVendidos();
     }
 }

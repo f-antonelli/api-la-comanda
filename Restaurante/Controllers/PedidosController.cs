@@ -113,5 +113,18 @@ namespace Restaurante.Controllers
 
             return Ok(productos);
         }
+
+        [HttpGet("Top5ProductosMenosVendidos")]
+        public async Task<ActionResult<Productos>> Top5ProductosMenosVendidos()
+        {
+            var productos = await _pedidosService.Top5ProductosMenosVendidos();
+
+            if (productos == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(productos);
+        }
     }
 }
