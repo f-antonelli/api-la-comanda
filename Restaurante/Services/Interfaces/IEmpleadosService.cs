@@ -6,5 +6,7 @@ namespace Restaurante.Services.Interfaces
 {
     public interface IEmpleadosService
     {
+        Task<IEnumerable<Empleados>> GetAll();
+        Task<Empleados> GetById(string id);
     }
 }

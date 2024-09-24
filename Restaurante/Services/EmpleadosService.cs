@@ -15,11 +15,23 @@ namespace Restaurante.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<Pedidos>> GetAll()
+        public async Task<IEnumerable<Empleados>> GetAll()
         {
-            var pedidos = await _unitOfWork.PedidoRepository.GetAll();
-            return _mapper.Map<IEnumerable<Pedidos>>(pedidos);
+            var empleados = await _unitOfWork.EmpleadoRepository.GetAll();
+            return _mapper.Map<IEnumerable<Empleados>>(empleados);
 
+        }
+
+        public async Task<Empleados> GetById(string id)
+        {
+            var empleado = await _unitOfWork.EmpleadoRepository.GetById(int.Parse(id));
+
+            if (empleado == null)
+            {
+                throw new Exception("El empleado no existe.");
+            }
+
+            return _mapper.Map<Empleados>(empleado);
         }
     }
 }
