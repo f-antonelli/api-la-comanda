@@ -112,5 +112,28 @@ namespace Restaurante.Services
             return productosMenosVendidos;
         }
 
+        public async Task<IEnumerable<Pedidos>> PedidosFueraDeTiempo()
+        {
+            var pedidos = await _unitOfWork.PedidoRepository.GetAll();
+
+
+            var pedidosFueraDeTiempo = pedidos
+       .Where(p =>
+            (p.FechaFinalizacion - p.FechaCreación) < p.TiempoEstimado)
+         .Select(p => new Pedidos
+         {
+             Id = p.Id,
+             ProductoId = p.ProductoId,
+             Cantidad = p.Cantidad,
+             Estado = p.Estado,
+             FechaCreación = p.FechaCreación,
+             FechaFinalizacion = p.FechaFinalizacion, 
+             TiempoEstimado = p.TiempoEstimado,
+         })
+         .ToList();
+
+            return pedidosFueraDeTiempo;
+        }
+
     }
 }
