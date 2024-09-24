@@ -26,6 +26,7 @@ namespace Restaurante.Data
             modelBuilder.ApplyConfiguration(new MesasSeed());
             modelBuilder.ApplyConfiguration(new PedidosSeed());
             modelBuilder.ApplyConfiguration(new ProductosSeed());
+            modelBuilder.ApplyConfiguration(new EmpleadoPedidosSeed());
 
 
         }
@@ -37,7 +38,7 @@ namespace Restaurante.Data
         public virtual DbSet<Mesas> Mesas { get; set; }
         public virtual DbSet<Pedidos> Pedidos{ get; set; }
         public virtual DbSet<Productos> Productos { get; set; }
-
+        public virtual DbSet<EmpleadoPedidos> EmpleadoPedidos { get; set; }
 
     }
 }

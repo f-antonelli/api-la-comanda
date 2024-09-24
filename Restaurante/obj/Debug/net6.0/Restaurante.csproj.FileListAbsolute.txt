@@ -139,3 +139,6 @@ C:\Users\anton\OneDrive\Escritorio\labwebservidor\api-la-comanda\Restaurante\obj
 C:\Users\anton\OneDrive\Escritorio\labwebservidor\api-la-comanda\Restaurante\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\anton\OneDrive\Escritorio\labwebservidor\api-la-comanda\Restaurante\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\anton\OneDrive\Escritorio\labwebservidor\api-la-comanda\Restaurante\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\facultad\LabApp web Servidor\api-la-comanda\Restaurante\bin\Debug\net6.0\AutoMapper.dll
+D:\facultad\LabApp web Servidor\api-la-comanda\Restaurante\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\facultad\LabApp web Servidor\api-la-comanda\Restaurante\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

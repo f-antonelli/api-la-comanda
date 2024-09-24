@@ -12,8 +12,8 @@ using Restaurante.Data;
 namespace Restaurante.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240904181143_Inicial")]
-    partial class Inicial
+    [Migration("20240924213349_updatedEmpleadoPedido")]
+    partial class updatedEmpleadoPedido
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -63,6 +63,91 @@ namespace Restaurante.Migrations
                             Id = 3,
                             MesaId = 3,
                             NombreCliente = "Fernando"
+                        });
+                });
+
+            modelBuilder.Entity("Restaurante.Entities.EmpleadoPedidos", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("EmpleadoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PedidoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmpleadoId");
+
+                    b.HasIndex("PedidoId");
+
+                    b.ToTable("EmpleadoPedidos");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            EmpleadoId = 5,
+                            PedidoId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            EmpleadoId = 5,
+                            PedidoId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            EmpleadoId = 3,
+                            PedidoId = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            EmpleadoId = 1,
+                            PedidoId = 4
+                        },
+                        new
+                        {
+                            Id = 5,
+                            EmpleadoId = 1,
+                            PedidoId = 5
+                        },
+                        new
+                        {
+                            Id = 6,
+                            EmpleadoId = 5,
+                            PedidoId = 6
+                        },
+                        new
+                        {
+                            Id = 7,
+                            EmpleadoId = 5,
+                            PedidoId = 7
+                        },
+                        new
+                        {
+                            Id = 8,
+                            EmpleadoId = 5,
+                            PedidoId = 8
+                        },
+                        new
+                        {
+                            Id = 9,
+                            EmpleadoId = 1,
+                            PedidoId = 9
+                        },
+                        new
+                        {
+                            Id = 10,
+                            EmpleadoId = 1,
+                            PedidoId = 10
                         });
                 });
 
@@ -468,6 +553,25 @@ namespace Restaurante.Migrations
                         .IsRequired();
 
                     b.Navigation("Mesa");
+                });
+
+            modelBuilder.Entity("Restaurante.Entities.EmpleadoPedidos", b =>
+                {
+                    b.HasOne("Restaurante.Entities.Empleados", "Empleado")
+                        .WithMany()
+                        .HasForeignKey("EmpleadoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Restaurante.Entities.Pedidos", "Pedido")
+                        .WithMany()
+                        .HasForeignKey("PedidoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Empleado");
+
+                    b.Navigation("Pedido");
                 });
 
             modelBuilder.Entity("Restaurante.Entities.Pedidos", b =>

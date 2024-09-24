@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Restaurante.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -108,6 +108,32 @@ namespace Restaurante.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "EmpleadoPedidos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EmpleadoId = table.Column<int>(type: "int", nullable: false),
+                    PedidoId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EmpleadoPedidos", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_EmpleadoPedidos_Empleados_EmpleadoId",
+                        column: x => x.EmpleadoId,
+                        principalTable: "Empleados",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_EmpleadoPedidos_Pedidos_PedidoId",
+                        column: x => x.PedidoId,
+                        principalTable: "Pedidos",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.InsertData(
                 table: "Empleados",
                 columns: new[] { "Id", "FechaIngreso", "Nombre", "Password", "Rol", "Sector", "Usuario" },
@@ -179,10 +205,37 @@ namespace Restaurante.Migrations
                     { 10, 2, 2, 2, new DateTime(2024, 9, 4, 18, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 4, 18, 50, 0, 0, DateTimeKind.Unspecified), 4, new TimeSpan(0, 0, 50, 0, 0) }
                 });
 
+            migrationBuilder.InsertData(
+                table: "EmpleadoPedidos",
+                columns: new[] { "Id", "EmpleadoId", "PedidoId" },
+                values: new object[,]
+                {
+                    { 1, 5, 1 },
+                    { 2, 5, 2 },
+                    { 3, 5, 3 },
+                    { 4, 5, 4 },
+                    { 5, 5, 5 },
+                    { 6, 5, 6 },
+                    { 7, 3, 7 },
+                    { 8, 5, 8 },
+                    { 9, 5, 9 },
+                    { 10, 5, 10 }
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Comandas_MesaId",
                 table: "Comandas",
                 column: "MesaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_EmpleadoPedidos_EmpleadoId",
+                table: "EmpleadoPedidos",
+                column: "EmpleadoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_EmpleadoPedidos_PedidoId",
+                table: "EmpleadoPedidos",
+                column: "PedidoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Pedidos_ComandaId",
@@ -197,6 +250,9 @@ namespace Restaurante.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "EmpleadoPedidos");
+
             migrationBuilder.DropTable(
                 name: "Empleados");
 

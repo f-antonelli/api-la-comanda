@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Restaurante.Data;
 
@@ -11,9 +12,10 @@ using Restaurante.Data;
 namespace Restaurante.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20240924203610_initial")]
+    partial class initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -102,19 +104,19 @@ namespace Restaurante.Migrations
                         new
                         {
                             Id = 3,
-                            EmpleadoId = 3,
+                            EmpleadoId = 5,
                             PedidoId = 3
                         },
                         new
                         {
                             Id = 4,
-                            EmpleadoId = 1,
+                            EmpleadoId = 5,
                             PedidoId = 4
                         },
                         new
                         {
                             Id = 5,
-                            EmpleadoId = 1,
+                            EmpleadoId = 5,
                             PedidoId = 5
                         },
                         new
@@ -126,7 +128,7 @@ namespace Restaurante.Migrations
                         new
                         {
                             Id = 7,
-                            EmpleadoId = 5,
+                            EmpleadoId = 3,
                             PedidoId = 7
                         },
                         new
@@ -138,13 +140,13 @@ namespace Restaurante.Migrations
                         new
                         {
                             Id = 9,
-                            EmpleadoId = 1,
+                            EmpleadoId = 5,
                             PedidoId = 9
                         },
                         new
                         {
                             Id = 10,
-                            EmpleadoId = 1,
+                            EmpleadoId = 5,
                             PedidoId = 10
                         });
                 });
