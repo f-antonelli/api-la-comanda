@@ -1,5 +1,8 @@
 ﻿using AutoMapper;
+using Restaurante.Dto.Pedido;
+using Restaurante.DTo;
 using Restaurante.Entities;
+using Restaurante.Entities.Enums;
 using Restaurante.Services.Interfaces;
 
 namespace Restaurante.Services
@@ -32,6 +35,26 @@ namespace Restaurante.Services
             }
 
             return _mapper.Map<Empleados>(empleado);
+        }
+
+        public async Task<Empleados> Create(EmpleadosDto empleadosDto)
+        {
+            var empleado = _mapper.Map<Empleados>(empleadosDto);
+
+            await _unitOfWork.EmpleadoRepository.Add(empleado);
+            return empleado;
+        }
+
+        public async Task Delete(string id)
+        {
+            var empleado = await _unitOfWork.EmpleadoRepository.GetById(int.Parse(id));
+
+            if (empleado == null)
+            {
+                throw new Exception("El empleado no existe.");
+            }
+
+            _unitOfWork.EmpleadoRepository.Delete(empleado);
         }
     }
 }

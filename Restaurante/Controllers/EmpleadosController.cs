@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Restaurante.Dto.Pedido;
+using Restaurante.DTo;
 using Restaurante.Entities;
 using Restaurante.Services;
 using Restaurante.Services.Interfaces;
@@ -46,6 +48,41 @@ namespace Restaurante.Controllers
             {
                 throw;
             }
+        }
+
+        [HttpPost()]
+        public async Task<ActionResult<Empleados>> CreateEmpleado(EmpleadosDto empleadoDto)
+        {
+            try
+            {
+                var result = await _empleadosService.Create(empleadoDto);
+
+                if (result != null)
+                    return Ok(true);
+
+                return BadRequest(false);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<EmpleadosDto>> Delete(string id)
+        {
+            try
+            {
+                await _empleadosService.Delete(id);
+
+
+                return Ok(true);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         [HttpGet("DiasHorarios")]

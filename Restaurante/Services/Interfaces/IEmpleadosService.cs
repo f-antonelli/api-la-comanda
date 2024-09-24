@@ -8,5 +8,7 @@ namespace Restaurante.Services.Interfaces
     {
         Task<IEnumerable<Empleados>> GetAll();
         Task<Empleados> GetById(string id);
+        Task<Empleados> Create(EmpleadosDto empleadosDto);
+        Task Delete(string id);
     }
 }
