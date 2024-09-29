@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Restaurante.Dto.Pedido;
 using Restaurante.DTo;
 using Restaurante.Entities;
@@ -133,6 +134,33 @@ namespace Restaurante.Services
          .ToList();
 
             return pedidosFueraDeTiempo;
+        }
+
+        public async Task<List<SectorOperacionDto>> ObtenerOperacionesPorSector()
+        {
+            return await _unitOfWork.PedidoRepository.OperacionesPorSector();
+        }
+
+        public async Task<List<SectorConEmpleadosDto>> OperacionesPorEmpleadoYSector()
+        {
+            var datos = await _unitOfWork.PedidoRepository.OperacionesPorEmpleadoYSector();
+
+            var operacionesPorSector = datos
+                .GroupBy(d => d.Sector)
+                .Select(g => new SectorConEmpleadosDto
+                {
+                    Sector = g.Key,
+                    Empleados = g.GroupBy(x => x.EmpleadoId)
+                                 .Select(e => new EmpleadoOperacionDto
+                                 {
+                                     EmpleadoId = e.Key,
+                                     CantidadOperaciones = e.Sum(x => x.CantidadOperaciones)
+                                 })
+                                 .ToList()
+                })
+                .ToList();
+
+            return operacionesPorSector;
         }
 
     }

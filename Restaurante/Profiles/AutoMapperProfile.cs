@@ -3,6 +3,7 @@ using Restaurante.Entities;
 using Restaurante.DTo;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using Restaurante.DTo.Empleados;
+using Restaurante.Dto.Pedido;
 namespace Restaurante.Profiles
 
 {
@@ -15,6 +16,8 @@ namespace Restaurante.Profiles
             CreateMap<Mesas, MesasDto>().ReverseMap();
             CreateMap<Pedidos, PedidosDto>().ReverseMap();
             CreateMap<Productos, ProductoDto>().ReverseMap();
+            CreateMap<PedidoCreateRequestDto, Pedidos>();
+            CreateMap<Pedidos, PedidoResponseDto>();
         }
     }
 }

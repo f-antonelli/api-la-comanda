@@ -14,5 +14,7 @@ namespace Restaurante.Services.Interfaces
         Task<IEnumerable<PedidosDto>> Top5ProductosMasVendidos();
         Task<IEnumerable<PedidosDto>> Top5ProductosMenosVendidos();
         Task<IEnumerable<Pedidos>> PedidosFueraDeTiempo();
+        Task<List<SectorOperacionDto>> ObtenerOperacionesPorSector();
+        Task<List<SectorConEmpleadosDto>> OperacionesPorEmpleadoYSector();
     }
 }

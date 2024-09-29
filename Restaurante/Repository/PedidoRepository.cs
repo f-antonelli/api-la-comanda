@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Restaurante.Data;
+using Restaurante.DTo;
 using Restaurante.Entities;
 using Restaurante.Repository.Interfaces;
 
@@ -38,6 +39,40 @@ namespace Restaurante.Repository
             await _context.Pedidos.AddAsync(entity);
             await _context.SaveChangesAsync();
 
+        }
+
+        public async Task<List<SectorOperacionDto>> OperacionesPorSector()
+        {
+            var operacionesPorSector = await (from pedido in _context.Pedidos
+                                              join producto in _context.Productos
+                                              on pedido.ProductoId equals producto.Id
+                                              group pedido by producto.Sector into g
+                                              select new SectorOperacionDto
+                                              {
+                                                  Sector = (int)g.Key,
+                                                  CantidadOperaciones = g.Sum(p => p.Cantidad)
+                                              })
+                                              .ToListAsync();
+
+            return operacionesPorSector;
+        }
+
+        public async Task<List<EmpleadoSectorOperacionDto>> OperacionesPorEmpleadoYSector()
+        {
+            var resultado = await (from empleadoPedido in _context.EmpleadoPedidos
+                                   join pedido in _context.Pedidos
+                                   on empleadoPedido.PedidoId equals pedido.Id
+                                   join producto in _context.Productos
+                                   on pedido.ProductoId equals producto.Id
+                                   select new EmpleadoSectorOperacionDto
+                                   {
+                                       EmpleadoId = empleadoPedido.EmpleadoId,
+                                       Sector = (int)producto.Sector,
+                                       CantidadOperaciones = pedido.Cantidad
+                                   })
+                              .ToListAsync();
+
+            return resultado;
         }
     }
 }

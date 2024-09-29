@@ -3,6 +3,7 @@ using Restaurante.Dto.Pedido;
 using Restaurante.DTo;
 using Restaurante.Entities;
 using Restaurante.Repository;
+using Restaurante.Services;
 using Restaurante.Services.Interfaces;
 
 namespace Restaurante.Controllers
@@ -138,6 +139,20 @@ namespace Restaurante.Controllers
             }
 
             return Ok(pedidos);
+        }
+
+        [HttpGet("operacionesPorSector")]
+        public async Task<IActionResult> ObtenerOperacionesPorSector()
+        {
+            var operaciones = await _pedidosService.ObtenerOperacionesPorSector();
+            return Ok(operaciones);
+        }
+
+        [HttpGet("operacionesPorEmpleadoSector")]
+        public async Task<IActionResult> ObtenerOperacionesPorEmpleadoYSector()
+        {
+            var operaciones = await _pedidosService.OperacionesPorEmpleadoYSector();
+            return Ok(operaciones);
         }
     }
 }

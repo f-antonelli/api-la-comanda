@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Restaurante.Dto.Pedido;
 using Restaurante.DTo.Empleados;
 using Restaurante.Entities;
-using Restaurante.Services;
 using Restaurante.Services.Interfaces;
 
 namespace Restaurante.Controllers
@@ -97,21 +95,6 @@ namespace Restaurante.Controllers
 
             return Ok(empleados);
         }
-        [HttpGet("OperacionesPorSector")]
-        public Task OperacionesPorSector()
-        {
-            throw new NotImplementedException();
-        }
-        [HttpGet("OperacionesPorEmpleadoYSector")]
-        public Task OperacionesPorEmpleadoYSector()
-        {
 
-            throw new NotImplementedException();
-        }
-        [HttpGet("OperacionesPorEmpleado")]
-        public Task OperacionesPorEmpleado()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
