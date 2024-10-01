@@ -26,9 +26,12 @@ namespace Restaurante.Services
         {
            var pedido = _mapper.Map<Pedidos>(pedidoCreateDto);
 
-            pedido.Estado = EstadosPedido.EnPreparación;
+            var comanda = await _unitOfWork.ComandaRepository.Add(new Comandas(pedidoCreateDto.MesaId));
+
+            pedido.Estado = EstadosPedido.Ordenado;
             pedido.TiempoEstimado = TimeSpan.Zero;
             pedido.FechaCreación = DateTime.Now;
+            pedido.ComandaId = comanda.Id;
 
             await _unitOfWork.PedidoRepository.Add(pedido);
            return _mapper.Map<PedidoResponseDto>(pedido);

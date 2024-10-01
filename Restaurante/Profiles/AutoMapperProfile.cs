@@ -4,6 +4,7 @@ using Restaurante.DTo;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using Restaurante.DTo.Empleados;
 using Restaurante.Dto.Pedido;
+using Restaurante.DTo.Comanda;
 namespace Restaurante.Profiles
 
 {

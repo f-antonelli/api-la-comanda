@@ -9,15 +9,17 @@ namespace Restaurante
 
         public IPedidoRepository PedidoRepository { get; }
         public IEmpleadoRepository EmpleadoRepository { get; }
+        public IComandaRepository ComandaRepository { get; }
 
         private readonly DataContext _context;
 
         public UnitOfWork(DataContext context, IPedidoRepository pedidoRepository,
-        IEmpleadoRepository empleadoRepository)
+        IEmpleadoRepository empleadoRepository, IComandaRepository comandaRepository)
         {
             _context = context;
             PedidoRepository = pedidoRepository;
             EmpleadoRepository = empleadoRepository;
+            ComandaRepository = comandaRepository;
         }
 
         public async Task<int> Save()

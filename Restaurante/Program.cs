@@ -33,11 +33,11 @@ builder.Services.AddScoped<EmpleadoPedidosRepository>();
 
 builder.Services.AddScoped<ProductoRepository>();
 builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
+builder.Services.AddScoped<IComandaRepository, ComandaRepository>();
 builder.Services.AddScoped<MesaRepository>();
 builder.Services.AddScoped<IEmpleadoRepository, EmpleadoRepository>();
-builder.Services.AddScoped<ComandaRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(x => new UnitOfWork(x.GetRequiredService<DataContext>(),
-    x.GetRequiredService<IPedidoRepository>(), x.GetRequiredService<IEmpleadoRepository>()));
+    x.GetRequiredService<IPedidoRepository>(), x.GetRequiredService<IEmpleadoRepository>(), x.GetRequiredService<IComandaRepository>()));
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 

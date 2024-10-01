@@ -7,6 +7,7 @@ namespace Restaurante
     {
         IPedidoRepository PedidoRepository { get; }
         IEmpleadoRepository EmpleadoRepository { get; }
+        IComandaRepository ComandaRepository { get; }
  
         Task<int> Save();
     }

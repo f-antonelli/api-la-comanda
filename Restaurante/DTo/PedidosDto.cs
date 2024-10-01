@@ -1,12 +1,13 @@
 ﻿using Restaurante.Entities.Enums;
 using Restaurante.Entities;
+using Restaurante.DTo.Comanda;
 
 namespace Restaurante.DTo
 {
     public class PedidosDto
     {
         public int ComandaId { get; set; }
-        public ComandasDto Comanda { get; set; }
+        public ComandaCreateRequestDto Comanda { get; set; }
         public Productos Producto { get; set; }
         public int ProductoId { get; set; }
         public int Cantidad { get; set; }

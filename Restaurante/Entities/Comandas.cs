@@ -8,8 +8,11 @@ namespace Restaurante.Entities
 {
     public class Comandas : ClaseBase
     {
+        public Comandas(int mesaId)
+        {
+            MesaId = mesaId;
+        }
+
         public int MesaId { get; set; }
-        public Mesas Mesa { get; set; }
-        public string NombreCliente { get; set; }
     }
 }

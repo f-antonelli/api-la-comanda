@@ -4,7 +4,7 @@
     {
         Task<List<T>> GetAll();
         Task<T> GetById(int id);
-        Task Add(T entity);
+        Task<T> Add(T entity);
         void Delete(T entity);
         void Edit(T entity);
     }
