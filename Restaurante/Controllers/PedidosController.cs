@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Restaurante.Dto.Pedido;
 using Restaurante.DTo;
+using Restaurante.DTo.Pedido;
 using Restaurante.Entities;
 using Restaurante.Repository;
 using Restaurante.Services;
@@ -40,11 +41,11 @@ namespace Restaurante.Controllers
 
 
         [HttpPut("update/{id}")]
-        public async Task<ActionResult<Productos>> update(string id, PedidosDto pedidoDto)
+        public async Task<ActionResult<Productos>> update(string id, PedidoUpdateRequestDto pedidoUpdateDto)
         {
             try
             {
-                await _pedidosService.Update(id, pedidoDto);
+                await _pedidosService.Update(id, pedidoUpdateDto);
                 return Ok(true);
 
             }

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Restaurante.Dto.Pedido;
 using Restaurante.DTo;
+using Restaurante.DTo.Pedido;
 using Restaurante.Entities;
 using Restaurante.Entities.Enums;
 using Restaurante.Services.Interfaces;
@@ -26,8 +27,8 @@ namespace Restaurante.Services
            var pedido = _mapper.Map<Pedidos>(pedidoCreateDto);
 
             pedido.Estado = EstadosPedido.EnPreparación;
+            pedido.TiempoEstimado = TimeSpan.Zero;
             pedido.FechaCreación = DateTime.Now;
-            pedido.FechaFinalizacion = pedido.FechaCreación + pedido.TiempoEstimado;
 
             await _unitOfWork.PedidoRepository.Add(pedido);
            return _mapper.Map<PedidoResponseDto>(pedido);
@@ -45,9 +46,10 @@ namespace Restaurante.Services
             _unitOfWork.PedidoRepository.Delete(pedido);
         }
 
-        public async Task Update(string id, PedidosDto pedidoDto)
+        public async Task Update(string id, PedidoUpdateRequestDto pedidoDto)
         {
             var pedido = await _unitOfWork.PedidoRepository.GetById(int.Parse(id));
+
             if (pedido == null)
             {
                 throw new Exception("El pedido no existe.");
