@@ -63,7 +63,7 @@ namespace Restaurante.Controllers
                 var result = await _pedidosService.Create(pedidoCreateDto);
 
                 if (result != null)
-                    return Ok(true);
+                    return Ok(result);
 
                 return BadRequest(false);
             }
