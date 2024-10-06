@@ -102,6 +102,17 @@ namespace Restaurante.Controllers
             return Ok(productos);
         }
 
+        [HttpGet("ActualizarAPreparación")]
+        public async Task<ActionResult<PedidoResponseDto>> ActualizarAPreparación(int id, int tiempoEstimado)
+        {
+            var pedido = await _pedidosService.ActualizarAPreparación(id,tiempoEstimado);
+
+           
+
+            return Ok(pedido);
+        }
+
+
         [HttpGet("Top5ProductosMasVendidos")]
         public async Task<ActionResult<Productos>> Top5ProductosMasVendidos()
         {

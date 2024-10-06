@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Restaurante.Dto.Pedido;
 using Restaurante.DTo;
@@ -56,6 +57,7 @@ namespace Restaurante.Services
             _mapper.Map(pedidoDto, pedido);
 
             _unitOfWork.PedidoRepository.Edit(pedido);
+            _unitOfWork.Save();
         }
 
         public async Task<IEnumerable<Pedidos>> GetAll()
@@ -162,6 +164,24 @@ namespace Restaurante.Services
 
             return operacionesPorSector;
         }
+
+        public async Task<PedidoResponseDto> ActualizarAPreparación(int id, int tiempoEstimadoMinutos)
+        {
+            var pedido = await _unitOfWork.PedidoRepository.GetById(id);
+            if (pedido == null) throw new Exception("El pedido no existe");
+
+            pedido.TiempoEstimado = TimeSpan.FromMinutes(tiempoEstimadoMinutos);
+            pedido.ActualizarEstado();
+
+            _unitOfWork.PedidoRepository.Edit(pedido);
+            _unitOfWork.Save();
+
+            var rsta = _mapper.Map<PedidoResponseDto>(pedido);
+            return rsta;
+        }
+
+
+        
 
     }
 }

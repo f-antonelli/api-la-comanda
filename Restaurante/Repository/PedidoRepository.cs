@@ -26,7 +26,7 @@ namespace Restaurante.Repository
         public async void Edit(Pedidos entity)
         {
             _context.Pedidos.Update(entity);
-            await _context.SaveChangesAsync();
+            //await _context.SaveChangesAsync();
         }
 
         public async Task<List<Pedidos>> GetAll()

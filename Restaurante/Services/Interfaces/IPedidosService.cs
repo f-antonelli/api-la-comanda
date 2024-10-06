@@ -11,6 +11,11 @@ namespace Restaurante.Services.Interfaces
         Task Update(string id, PedidosDto pedidoDto);
         Task<IEnumerable<Pedidos>> GetAll();
         Task<Pedidos> GetById(string id);
+
+        Task<PedidoResponseDto> ActualizarAPreparación(int id, int tiempoEstimadoMinutos);
+
+
+
         Task<IEnumerable<PedidosDto>> Top5ProductosMasVendidos();
         Task<IEnumerable<PedidosDto>> Top5ProductosMenosVendidos();
         Task<IEnumerable<Pedidos>> PedidosFueraDeTiempo();
