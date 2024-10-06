@@ -167,6 +167,8 @@ namespace Restaurante.Services
 
         public async Task<PedidoResponseDto> ActualizarAPreparación(int id, int tiempoEstimadoMinutos)
         {
+            //agregar validacion Empleado
+
             var pedido = await _unitOfWork.PedidoRepository.GetById(id);
             if (pedido == null) throw new Exception("El pedido no existe");
 
@@ -180,8 +182,21 @@ namespace Restaurante.Services
             return rsta;
         }
 
+        public async Task<PedidoResponseDto> ActualizarAListoParaServir(int idPedido, int idEmpleado)
+        {
+            //agregar validacion Empleado
 
-        
+            var pedido = await _unitOfWork.PedidoRepository.GetById(idPedido);
+            if (pedido == null) throw new Exception("El pedido no existe");
+          
+            pedido.ActualizarEstado();
+            pedido.FechaFinalizacion = DateTime.Now;
 
+            _unitOfWork.PedidoRepository.Edit(pedido);
+            _unitOfWork.Save();
+
+            var rsta = _mapper.Map<PedidoResponseDto>(pedido);
+            return rsta;
+        }
     }
 }

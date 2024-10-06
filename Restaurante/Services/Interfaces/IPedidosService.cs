@@ -13,6 +13,7 @@ namespace Restaurante.Services.Interfaces
         Task<Pedidos> GetById(string id);
 
         Task<PedidoResponseDto> ActualizarAPreparación(int id, int tiempoEstimadoMinutos);
+        Task<PedidoResponseDto> ActualizarAListoParaServir(int idPedido, int idEmpleado);
 
 
 
