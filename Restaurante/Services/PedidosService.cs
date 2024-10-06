@@ -44,9 +44,10 @@ namespace Restaurante.Services
             }
 
             _unitOfWork.PedidoRepository.Delete(pedido);
+            _unitOfWork.Save();
         }
 
-        public async Task Update(string id, PedidosDto pedidoDto)
+        public async Task Update(string id, PedidoResponseDto pedidoDto)
         {
             var pedido = await _unitOfWork.PedidoRepository.GetById(int.Parse(id));
             if (pedido == null)
@@ -79,13 +80,13 @@ namespace Restaurante.Services
             return _mapper.Map<Pedidos>(pedido);
         }
 
-        public async Task<IEnumerable<PedidosDto>> Top5ProductosMasVendidos()
+        public async Task<IEnumerable<PedidoResponseDto>> Top5ProductosMasVendidos()
         {
             var pedidos = await _unitOfWork.PedidoRepository.GetAll();
 
             var productosMasVendidos = pedidos
               .GroupBy(p => p.ProductoId)
-              .Select(g => new PedidosDto
+              .Select(g => new PedidoResponseDto
               {
                   ProductoId = g.Key,                
                   Cantidad = g.Sum(p => p.Cantidad) 
@@ -97,13 +98,13 @@ namespace Restaurante.Services
             return productosMasVendidos;
         }
 
-        public async Task<IEnumerable<PedidosDto>> Top5ProductosMenosVendidos()
+        public async Task<IEnumerable<PedidoResponseDto>> Top5ProductosMenosVendidos()
         {
             var pedidos = await _unitOfWork.PedidoRepository.GetAll();
 
             var productosMenosVendidos = pedidos
               .GroupBy(p => p.ProductoId)
-              .Select(g => new PedidosDto
+              .Select(g => new PedidoResponseDto
               {
                   ProductoId = g.Key,
                   Cantidad = g.Sum(p => p.Cantidad)

@@ -40,7 +40,7 @@ namespace Restaurante.Controllers
 
 
         [HttpPut("update/{id}")]
-        public async Task<ActionResult<Productos>> update(string id, PedidosDto pedidoDto)
+        public async Task<ActionResult<Productos>> update(string id, PedidoResponseDto pedidoDto)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace Restaurante.Controllers
                 var result = await _pedidosService.Create(pedidoCreateDto);
 
                 if (result != null)
-                    return Ok(true);
+                    return Ok(result.Id);
 
                 return BadRequest(false);
             }
@@ -73,7 +73,7 @@ namespace Restaurante.Controllers
         }
 
         [HttpDelete("delete/{id}")]
-        public async Task<ActionResult<PedidosDto>> Delete(string id)
+        public async Task<ActionResult<PedidoResponseDto>> Delete(string id)
         {
             try
             {

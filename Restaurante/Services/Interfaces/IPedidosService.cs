@@ -8,7 +8,7 @@ namespace Restaurante.Services.Interfaces
     {
         Task<PedidoResponseDto> Create(PedidoCreateRequestDto pedidoCreateDto);
         Task Delete(string id);
-        Task Update(string id, PedidosDto pedidoDto);
+        Task Update(string id, PedidoResponseDto pedidoDto);
         Task<IEnumerable<Pedidos>> GetAll();
         Task<Pedidos> GetById(string id);
 
@@ -17,8 +17,8 @@ namespace Restaurante.Services.Interfaces
 
 
 
-        Task<IEnumerable<PedidosDto>> Top5ProductosMasVendidos();
-        Task<IEnumerable<PedidosDto>> Top5ProductosMenosVendidos();
+        Task<IEnumerable<PedidoResponseDto>> Top5ProductosMasVendidos();
+        Task<IEnumerable<PedidoResponseDto>> Top5ProductosMenosVendidos();
         Task<IEnumerable<Pedidos>> PedidosFueraDeTiempo();
         Task<List<SectorOperacionDto>> ObtenerOperacionesPorSector();
         Task<List<SectorConEmpleadosDto>> OperacionesPorEmpleadoYSector();
