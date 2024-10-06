@@ -27,6 +27,8 @@ builder.Services.AddDbContext<DataContext>(op => op.UseSqlServer(builder.Configu
 //Services
 builder.Services.AddScoped<IPedidosService, PedidosService>();
 builder.Services.AddScoped<IEmpleadosService, EmpleadosService>();
+builder.Services.AddScoped<IComandaService, ComandaService>();
+
 
 //Repository
 builder.Services.AddScoped<EmpleadoPedidosRepository>();
