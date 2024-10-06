@@ -9,8 +9,7 @@ namespace Restaurante.Entities
 {
     public class Productos : ClaseBase
     {
-        public Productos()
-        {
+        public Productos(){
             _stock = 0;
         }
         public Sectores Sector { get; set; }
@@ -19,6 +18,7 @@ namespace Restaurante.Entities
         public float Precio { get; set; }
 
         private int _stock;
+        public int Stock { get => GetStock(); set => SetStock(value); }
         public void SetStock(int stock)
         {
             int udpatedStock = this._stock + stock;
