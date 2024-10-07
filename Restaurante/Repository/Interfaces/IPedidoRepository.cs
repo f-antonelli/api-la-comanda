@@ -5,7 +5,9 @@ namespace Restaurante.Repository.Interfaces
 {
     public interface IPedidoRepository: IRepository<Pedidos>
     {
-        Task<List<SectorOperacionDto>> OperacionesPorSector();
+        Task<Pedidos> Adds(Pedidos entity);        
+
+            Task<List<SectorOperacionDto>> OperacionesPorSector();
         Task<List<EmpleadoSectorOperacionDto>> OperacionesPorEmpleadoYSector();
     }
 }

@@ -9,7 +9,7 @@ namespace Restaurante.Entities
 {
     public class Pedidos : ClaseBase
     {
-        public Pedidos() {
+        public Pedidos() : base(){
             Estado = EstadosPedido.Ordenado;
         }
 

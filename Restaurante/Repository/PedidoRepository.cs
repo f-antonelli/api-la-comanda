@@ -6,7 +6,7 @@ using Restaurante.Repository.Interfaces;
 
 namespace Restaurante.Repository
 {
-    public class PedidoRepository:IPedidoRepository
+    public class PedidoRepository : IPedidoRepository
     {
         private readonly DataContext _context;
         public PedidoRepository(DataContext context) {
@@ -33,10 +33,12 @@ namespace Restaurante.Repository
             return await _context.Pedidos.ToListAsync();
         }
 
-        public async Task Add(Pedidos entity) {
+        public async Task<Pedidos> Adds(Pedidos entity) {
 
             await _context.Pedidos.AddAsync(entity);
             await _context.SaveChangesAsync();
+            return entity;
+            
 
         }
 
@@ -72,6 +74,11 @@ namespace Restaurante.Repository
                               .ToListAsync();
 
             return resultado;
+        }
+
+        Task IRepository<Pedidos>.Add(Pedidos entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -21,17 +21,28 @@ namespace Restaurante.Services
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
-
+        /*
+         {
+  "comandaId": 1,
+  "productoId": 1,
+  "cantidad": 1
+}
+        */
         public async Task<PedidoResponseDto> Create(PedidoCreateRequestDto pedidoCreateDto)
         {
            var pedido = _mapper.Map<Pedidos>(pedidoCreateDto);
 
-            pedido.Estado = EstadosPedido.EnPreparación;
             pedido.FechaCreación = DateTime.Now;
-            pedido.FechaFinalizacion = pedido.FechaCreación + pedido.TiempoEstimado;
+           
 
-            await _unitOfWork.PedidoRepository.Add(pedido);
-           return _mapper.Map<PedidoResponseDto>(pedido);
+            Pedidos pedidoAgregado = await _unitOfWork.PedidoRepository.Adds(pedido);
+
+            var rsta = _mapper.Map<PedidoResponseDto>(pedidoAgregado);
+
+           
+            return rsta;
+
+            _mapper.Map<PedidoResponseDto>(pedido);
         }
 
         public async Task Delete(string id)
