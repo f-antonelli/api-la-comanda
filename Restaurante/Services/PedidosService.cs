@@ -5,6 +5,7 @@ using Restaurante.Dto.Pedido;
 using Restaurante.DTo;
 using Restaurante.Entities;
 using Restaurante.Entities.Enums;
+using Restaurante.Repository;
 using Restaurante.Services.Interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -15,11 +16,13 @@ namespace Restaurante.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private readonly ProductoRepository _productoRepository;
 
-        public PedidosService(IUnitOfWork unitOfWork, IMapper mapper)
+        public PedidosService(IUnitOfWork unitOfWork, IMapper mapper, ProductoRepository productoRepository)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _productoRepository = productoRepository;
         }
         /*
          {
@@ -30,11 +33,22 @@ namespace Restaurante.Services
         */
         public async Task<PedidoResponseDto> Create(PedidoCreateRequestDto pedidoCreateDto)
         {
+            //trae el producto para disminuir el stock
+            var producto = await _productoRepository.GetById(pedidoCreateDto.ProductoId);
+
+            if (producto == null) {
+                throw new Exception("El producto no existe");
+            }
+            producto.SetStock(-pedidoCreateDto.Cantidad);
+
+            await _productoRepository.Edit(producto);
+
+            //el dto lo mapea a pedido
            var pedido = _mapper.Map<Pedidos>(pedidoCreateDto);
 
             pedido.FechaCreación = DateTime.Now;
            
-
+            //guarda el pedido
             Pedidos pedidoAgregado = await _unitOfWork.PedidoRepository.Adds(pedido);
 
             var rsta = _mapper.Map<PedidoResponseDto>(pedidoAgregado);
