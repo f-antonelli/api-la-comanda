@@ -15,6 +15,6 @@ namespace Restaurante.DTo
         public DateTime FechaFinalizacion { get; set; }
         public TimeSpan TiempoEstimado { get; set; }
 
-        
+     
     }
 }

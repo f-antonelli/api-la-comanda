@@ -11,6 +11,7 @@ namespace Restaurante.Entities
     {
         public Pedidos() : base(){
             Estado = EstadosPedido.Ordenado;
+            CodigoPedido = GenerarCodigoPedido();
         }
 
         public int ComandaId { get; set; }
@@ -22,7 +23,13 @@ namespace Restaurante.Entities
         public DateTime FechaCreación { get; set; }
         public DateTime? FechaFinalizacion { get; set; }
         public TimeSpan? TiempoEstimado { get; set; }
+        public string CodigoPedido { get; set; }
 
+        public string GenerarCodigoPedido()
+        {
+            string uniqueString = Guid.NewGuid().ToString("N").Substring(0, 5);
+            return uniqueString;
+        }
         public void ActualizarEstado()
         {
             switch (this.Estado){
