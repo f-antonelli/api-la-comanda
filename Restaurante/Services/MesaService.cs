@@ -5,6 +5,7 @@ using Restaurante.Entities.Enums;
 using Restaurante.Repository;
 using Restaurante.Repository.Interfaces;
 using Restaurante.Services.Interfaces;
+using System.Security.Cryptography;
 
 namespace Restaurante.Services
 {
@@ -28,7 +29,15 @@ namespace Restaurante.Services
 
         }
 
-      
+        public async Task<List<MesasDto>> GetAll()
+        {
+        List < Mesas > mesasList = await _mesaRepository.GetAll();
+            var rsta = _mapper.Map<List<MesasDto>>(mesasList);
+            return rsta;
+
+
+        }
+
         public async Task<MesasDto> UpdateStatus(int idMesa, EstadosMesa estadoMesa)
         {
             if(estadoMesa == EstadosMesa.Cerrada)

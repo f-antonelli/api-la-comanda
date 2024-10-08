@@ -8,5 +8,7 @@ namespace Restaurante.Services.Interfaces
     {
         Task<MesasDto> UpdateStatus(int idMesa, EstadosMesa estadoMesa);
         Task<MesasDto> CerrarMesa(int idMesa);
+
+        Task<List<MesasDto>> GetAll();
     }
 }
