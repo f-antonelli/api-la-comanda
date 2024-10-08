@@ -2,6 +2,7 @@
 using Restaurante.Data;
 using Restaurante.DTo;
 using Restaurante.Entities;
+using Restaurante.Entities.Enums;
 using Restaurante.Repository.Interfaces;
 
 namespace Restaurante.Repository
@@ -66,6 +67,33 @@ namespace Restaurante.Repository
                 throw new Exception("informacion ingresada incorrecta");
             }
 
+        }
+
+
+        public async Task<List<Pedidos>> GetListosParaServir()
+        {
+
+            var pedidosPorServir = await _context.Pedidos
+                .Include(x => x.Comanda.Mesa )
+                .Where(x => x.Estado == EstadosPedido.ListoParaServir)
+                .ToListAsync();
+
+            foreach(Pedidos pedido in pedidosPorServir)
+            {
+                pedido.Estado = EstadosPedido.Finalizado;               
+                Edit(pedido);
+            }
+
+            var pedidos = pedidosPorServir.DistinctBy(x => x.ComandaId);
+            
+            foreach(Pedidos pedido in pedidos)
+            {
+                Mesas mesa = pedido.Comanda.Mesa;
+                mesa.Estado = EstadosMesa.ClienteComiendo;
+                _context.Mesas.Update(mesa);
+            }
+
+            return pedidosPorServir;
         }
 
 

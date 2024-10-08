@@ -102,7 +102,7 @@ namespace Restaurante.Controllers
             return Ok(productos);
         }
 
-        [HttpGet("ActualizarAPreparación")]
+        [HttpPatch("ActualizarAPreparación")]
         public async Task<ActionResult<PedidoResponseDto>> ActualizarAPreparación(int id, int tiempoEstimado)
         {
             var pedido = await _pedidosService.ActualizarAPreparación(id,tiempoEstimado);
@@ -111,7 +111,7 @@ namespace Restaurante.Controllers
 
             return Ok(pedido);
         }
-        [HttpGet("ActualizarAListoParaServir")]
+        [HttpPatch("ActualizarAListoParaServir")]
         public async Task<ActionResult<PedidoResponseDto>> ActualizarAListoParaServir(int idPedido)
         {
             var pedido = await _pedidosService.ActualizarAListoParaServir(idPedido, 1);
@@ -127,6 +127,14 @@ namespace Restaurante.Controllers
 
             return Ok(pedido);
         }
+
+        //actualiza el estado del pedido y de la mesa
+        [HttpPatch("ServirPedidos")]
+        public async Task ServirPedidos()
+        {
+             await _pedidosService.ServirPedidos();
+
+         }
 
 
         [HttpGet("Top5ProductosMasVendidos")]

@@ -242,6 +242,14 @@ namespace Restaurante.Services
                         throw new Exception("Aun no hay un tiempo estimado");
                     }
                 }
+
+
+            public async Task ServirPedidos()
+            {
+            var servirPedidos = await _unitOfWork.PedidoRepository.GetListosParaServir();
+            await _unitOfWork.Save();
+            }
+
     }
 }
 

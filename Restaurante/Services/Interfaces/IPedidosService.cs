@@ -16,6 +16,7 @@ namespace Restaurante.Services.Interfaces
         Task<PedidoResponseDto> ActualizarAListoParaServir(int idPedido, int idEmpleado);
         Task<TimeSpan> ClienteMiraPedido(string codigoPedido, string codigoMesa);
 
+        Task ServirPedidos();
 
         Task<IEnumerable<PedidoResponseDto>> Top5ProductosMasVendidos();
         Task<IEnumerable<PedidoResponseDto>> Top5ProductosMenosVendidos();
