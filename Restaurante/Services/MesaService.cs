@@ -26,13 +26,21 @@ namespace Restaurante.Services
             var rsta = _mapper.Map<MesasDto>(mesa);
             return rsta;
 
-            //throw new NotImplementedException();
         }
 
       
-        public Task<MesasDto> UpdateStatus(int idMesa, EstadosMesa estadoMesa)
+        public async Task<MesasDto> UpdateStatus(int idMesa, EstadosMesa estadoMesa)
         {
-            throw new NotImplementedException();
+            if(estadoMesa == EstadosMesa.Cerrada)
+            {
+                throw new Exception("Accion no disponible con este metodo");
+            }
+            Mesas mesa = await _mesaRepository.GetById(idMesa);
+
+            mesa.Estado = estadoMesa;
+            await _mesaRepository.Edit(mesa);
+            var rsta = _mapper.Map<MesasDto>(mesa);
+            return rsta;
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Restaurante.DTo;
 using Restaurante.Entities;
+using Restaurante.Entities.Enums;
 using Restaurante.Services.Interfaces;
 
 namespace Restaurante.Controllers
@@ -25,5 +26,12 @@ namespace Restaurante.Controllers
             return mesaDto;
         }
 
+        [HttpPatch("UpdateEstadoMesa")]
+
+        public async Task<ActionResult<MesasDto>> UpdateEstadoMesa(int mesaId, EstadosMesa estadoMesa)
+        {
+            MesasDto mesaDto = await _mesaService.UpdateStatus(mesaId, estadoMesa);
+            return mesaDto;
+        }
     }
 }
