@@ -28,6 +28,8 @@ builder.Services.AddDbContext<DataContext>(op => op.UseSqlServer(builder.Configu
 builder.Services.AddScoped<IPedidosService, PedidosService>();
 builder.Services.AddScoped<IEmpleadosService, EmpleadosService>();
 builder.Services.AddScoped<IComandaService, ComandaService>();
+builder.Services.AddScoped<IMesaService, MesaService>();
+
 
 
 //Repository

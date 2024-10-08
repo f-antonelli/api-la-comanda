@@ -26,10 +26,12 @@ namespace Restaurante.Repository
 
         }
 
-        public async Task Edit(Mesas entity)
+        public async Task<Mesas> Edit(Mesas entity)
         {
             _context.Mesas.Update(entity);
             await _context.SaveChangesAsync();
+            return entity;
+
         }
 
         public async Task<List<Mesas>> GetAll()
