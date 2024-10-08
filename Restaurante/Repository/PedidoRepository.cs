@@ -42,6 +42,34 @@ namespace Restaurante.Repository
 
         }
 
+        public async Task<Pedidos> ClienteMiraPedido(string codigoPedido, string codigoMesa)
+        {
+            var pedido = await _context.Pedidos.Where(x => x.CodigoPedido == codigoPedido).FirstOrDefaultAsync();
+            if (pedido == null)
+            {
+                throw new Exception("no se encontro el pedido");
+            }
+            var comanda = await _context.Comandas
+                .Include(r => r.Mesa)
+                .Where(c => c.Id == pedido.ComandaId).FirstOrDefaultAsync();
+            if(comanda == null)
+            {
+                throw new Exception("no se encontro la comanda");
+            }
+
+            if (comanda.Mesa.Codigo == codigoMesa)
+            {
+                return pedido;
+            }
+            else
+            {
+                throw new Exception("informacion ingresada incorrecta");
+            }
+
+        }
+
+
+
         public async Task<List<SectorOperacionDto>> OperacionesPorSector()
         {
             var operacionesPorSector = await (from pedido in _context.Pedidos

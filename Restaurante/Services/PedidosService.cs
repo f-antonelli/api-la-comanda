@@ -224,5 +224,68 @@ namespace Restaurante.Services
             var rsta = _mapper.Map<PedidoResponseDto>(pedido);
             return rsta;
         }
+
+
+            public  async Task<TimeSpan> ClienteMiraPedido(string codigoPedido, string codigoMesa)
+                {
+                    var pedido = await _unitOfWork.PedidoRepository.ClienteMiraPedido(codigoPedido, codigoMesa);
+
+                    var tiempoEstimado = pedido.TiempoEstimado;
+
+
+                    if (tiempoEstimado != null)
+                    {
+                        return tiempoEstimado.GetValueOrDefault();
+                    }
+                    else
+                    {
+                        throw new Exception("Aun no hay un tiempo estimado");
+                    }
+                }
     }
 }
+
+
+
+/*
+ 
+     var pedidos = await _unitOfWork.PedidoRepository.GetAll();
+
+           var pedidoCliente = pedidos.Where(x => x.CodigoPedido == codigoPedido).FirstOrDefault();
+
+           if (pedidoCliente == null)
+           {
+               throw new Exception("El pedido no existe");
+           }
+
+           var comanda = await _unitOfWork.ComandaRepository.GetById(pedidoCliente.ComandaId);
+
+           if (comanda == null)
+           {
+               throw new Exception("La comanda no existe");
+           }
+
+           var mesas = await _unitOfWork.MesaRepository.GetById(comanda.MesaId);
+
+           if (mesas == null)
+           {
+               throw new Exception("La mesa no existe");
+           }
+           else if(mesas.Codigo != codigoMesa)
+           {
+               throw new Exception("La codigo de la mesa no coincide");
+
+           }
+           var tiempoEstimado = pedidoCliente.TiempoEstimado;
+
+
+           if (tiempoEstimado != null)
+           {
+               return tiempoEstimado.GetValueOrDefault();
+           }
+           else
+           {
+               throw new Exception("Aun no hay un tiempoe estimado");
+           }
+       TimeSpan asd = new TimeSpan(0,0,0);
+       return asd;*/

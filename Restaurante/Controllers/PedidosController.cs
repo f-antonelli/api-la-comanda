@@ -118,7 +118,15 @@ namespace Restaurante.Controllers
 
             return Ok(pedido);
         }
-        
+        [HttpGet("ClienteMiraPedido")]
+        public async Task<ActionResult<TimeSpan>> ClienteMiraPedido(string codigoPedido, string codigoMesa)
+        {
+            var pedido = await _pedidosService.ClienteMiraPedido(codigoPedido,codigoMesa);
+
+
+
+            return Ok(pedido);
+        }
 
 
         [HttpGet("Top5ProductosMasVendidos")]
