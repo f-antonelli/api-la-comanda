@@ -62,7 +62,7 @@ namespace Restaurante.Controllers
                 var result = await _pedidosService.Create(pedidoCreateDto);
 
                 if (result != null)
-                    return Ok(result.CodigoPedido);
+                    return Ok(result);
 
                 return BadRequest(false);
             }
@@ -103,9 +103,9 @@ namespace Restaurante.Controllers
         }
 
         [HttpPatch("ActualizarAPreparación")]
-        public async Task<ActionResult<PedidoResponseDto>> ActualizarAPreparación(int id, int tiempoEstimado)
+        public async Task<ActionResult<PedidoResponseDto>> ActualizarAPreparación(string codigoPedido, int tiempoEstimado)
         {
-            var pedido = await _pedidosService.ActualizarAPreparación(id,tiempoEstimado);
+            var pedido = await _pedidosService.ActualizarAPreparación(codigoPedido, tiempoEstimado);
 
            
 

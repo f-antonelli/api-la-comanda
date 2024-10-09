@@ -191,18 +191,19 @@ namespace Restaurante.Services
             return operacionesPorSector;
         }
 
-        public async Task<PedidoResponseDto> ActualizarAPreparación(int id, int tiempoEstimadoMinutos)
+        public async Task<PedidoResponseDto> ActualizarAPreparación(string codigoPedido, int tiempoEstimadoMinutos)
         {
             //agregar validacion Empleado
 
-            var pedido = await _unitOfWork.PedidoRepository.GetById(id);
+            var pedidos = await _unitOfWork.PedidoRepository.GetAll();
+            var pedido =  pedidos.Where(x => x.CodigoPedido == codigoPedido).FirstOrDefault();
             if (pedido == null) throw new Exception("El pedido no existe");
 
             pedido.TiempoEstimado = TimeSpan.FromMinutes(tiempoEstimadoMinutos);
             pedido.ActualizarEstado();
 
             _unitOfWork.PedidoRepository.Edit(pedido);
-            _unitOfWork.Save();
+            await _unitOfWork.Save();
 
             var rsta = _mapper.Map<PedidoResponseDto>(pedido);
             return rsta;
@@ -219,7 +220,7 @@ namespace Restaurante.Services
             pedido.FechaFinalizacion = DateTime.Now;
 
             _unitOfWork.PedidoRepository.Edit(pedido);
-            _unitOfWork.Save();
+            await _unitOfWork.Save();
 
             var rsta = _mapper.Map<PedidoResponseDto>(pedido);
             return rsta;
