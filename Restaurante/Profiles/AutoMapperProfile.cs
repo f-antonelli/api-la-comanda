@@ -16,7 +16,8 @@ namespace Restaurante.Profiles
             CreateMap<ComandaCreateDto, Comandas>();
 
             CreateMap<Empleados, EmpleadosDto>().ReverseMap();
-            CreateMap<Mesas, MesasDto>().ReverseMap();
+            CreateMap<Mesas, MesasDto>()
+                .ReverseMap();
             CreateMap<Pedidos, PedidoResponseDto>().ReverseMap();
             CreateMap<Productos, ProductoDto>().ReverseMap();
             CreateMap<PedidoCreateRequestDto, Pedidos>();
