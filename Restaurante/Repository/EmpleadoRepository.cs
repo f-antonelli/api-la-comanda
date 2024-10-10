@@ -40,5 +40,10 @@ namespace Restaurante.Repository
             await _context.SaveChangesAsync();
 
         }
+
+        public async Task<Empleados> GetByUserPass(string usuario, string password)
+        {
+            return await _context.Empleados.Where(x => x.Usuario == usuario && x.Password == password).FirstOrDefaultAsync();
+        }
     }
 }
