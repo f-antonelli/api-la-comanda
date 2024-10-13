@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\filtros\\accessfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\filtros\\accessfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\services\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\services\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\dto\\login\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\dto\\login\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\profiles\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\profiles\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\services\\interfaces\\ilogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\services\\interfaces\\ilogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +43,8 @@
       "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\repository\\empleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\services\\interfaces\\ilogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\services\\interfaces\\ilogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\dto\\login\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\dto\\login\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\dto\\mesasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\dto\\pedido\\pedidoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\dto\\pedido\\pedidoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\profiles\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\profiles\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\services\\pedidosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,11 +82,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "EmpleadosController.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Controllers\\EmpleadosController.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Controllers\\EmpleadosController.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Controllers\\EmpleadosController.cs",
+              "RelativeToolTip": "Restaurante\\Controllers\\EmpleadosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T19:32:25.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccessFilter.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Filtros\\AccessFilter.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Filtros\\AccessFilter.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Filtros\\AccessFilter.cs",
+              "RelativeToolTip": "Restaurante\\Filtros\\AccessFilter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T19:25:54.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "LoginController.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Restaurante\\Controllers\\LoginController.cs",
@@ -86,12 +120,11 @@
               "RelativeToolTip": "Restaurante\\Controllers\\LoginController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:36:21.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T16:36:21.477Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\appsettings.json",
               "RelativeDocumentMoniker": "Restaurante\\appsettings.json",
@@ -99,12 +132,11 @@
               "RelativeToolTip": "Restaurante\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-10T16:34:53.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T16:34:53.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Program.cs",
               "RelativeDocumentMoniker": "Restaurante\\Program.cs",
@@ -112,12 +144,11 @@
               "RelativeToolTip": "Restaurante\\Program.cs",
               "ViewState": "AQIAAEkAAAAAAAAAAAAAAFcAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:31:14.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T16:31:14.678Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "EmpleadoRepository.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\EmpleadoRepository.cs",
               "RelativeDocumentMoniker": "Restaurante\\Repository\\EmpleadoRepository.cs",
@@ -125,12 +156,11 @@
               "RelativeToolTip": "Restaurante\\Repository\\EmpleadoRepository.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAwwCsAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:27:45.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T16:27:45.93Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "IEmpleadoRepository.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\Interfaces\\IEmpleadoRepository.cs",
               "RelativeDocumentMoniker": "Restaurante\\Repository\\Interfaces\\IEmpleadoRepository.cs",
@@ -138,25 +168,24 @@
               "RelativeToolTip": "Restaurante\\Repository\\Interfaces\\IEmpleadoRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:27:08.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T16:27:08.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LogService.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Services\\LogService.cs",
               "RelativeDocumentMoniker": "Restaurante\\Services\\LogService.cs",
               "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Services\\LogService.cs",
               "RelativeToolTip": "Restaurante\\Services\\LogService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBkAAAAjAAAA",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAAFAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T16:13:46.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\DTo\\Login\\LoginRequestDTO.cs",
               "RelativeDocumentMoniker": "Restaurante\\DTo\\Login\\LoginRequestDTO.cs",
@@ -182,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "PedidoResponseDto.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\DTo\\Pedido\\PedidoResponseDto.cs",
               "RelativeDocumentMoniker": "Restaurante\\DTo\\Pedido\\PedidoResponseDto.cs",
@@ -190,12 +219,11 @@
               "RelativeToolTip": "Restaurante\\DTo\\Pedido\\PedidoResponseDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T22:25:45.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T22:25:45.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "AutoMapperProfile.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Profiles\\AutoMapperProfile.cs",
               "RelativeDocumentMoniker": "Restaurante\\Profiles\\AutoMapperProfile.cs",
@@ -208,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "MesasDto.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\DTo\\MesasDto.cs",
               "RelativeDocumentMoniker": "Restaurante\\DTo\\MesasDto.cs",
@@ -216,12 +244,11 @@
               "RelativeToolTip": "Restaurante\\DTo\\MesasDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T22:17:14.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T22:17:14.355Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Data\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Restaurante\\Data\\UnitOfWork.cs",
@@ -229,12 +256,11 @@
               "RelativeToolTip": "Restaurante\\Data\\UnitOfWork.cs",
               "ViewState": "AQIAABEAAAAAAAAAAADgvx0AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T22:04:03.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T22:04:03.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "PedidosController.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Controllers\\PedidosController.cs",
               "RelativeDocumentMoniker": "Restaurante\\Controllers\\PedidosController.cs",
@@ -242,12 +268,11 @@
               "RelativeToolTip": "Restaurante\\Controllers\\PedidosController.cs",
               "ViewState": "AQIAACsAAAAAAAAAAAAYwEUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T22:02:18.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T22:02:18.541Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "IPedidosService.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Services\\Interfaces\\IPedidosService.cs",
               "RelativeDocumentMoniker": "Restaurante\\Services\\Interfaces\\IPedidosService.cs",
@@ -255,12 +280,11 @@
               "RelativeToolTip": "Restaurante\\Services\\Interfaces\\IPedidosService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T22:02:01.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T22:02:01.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "PedidosService.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Services\\PedidosService.cs",
               "RelativeDocumentMoniker": "Restaurante\\Services\\PedidosService.cs",
@@ -268,12 +292,11 @@
               "RelativeToolTip": "Restaurante\\Services\\PedidosService.cs",
               "ViewState": "AQIAAMoAAAAAAAAAAADgv+AAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T21:58:42.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T21:58:42.969Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ComandasDto.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\DTo\\ComandasDto.cs",
               "RelativeDocumentMoniker": "Restaurante\\DTo\\ComandasDto.cs",
@@ -281,8 +304,7 @@
               "RelativeToolTip": "Restaurante\\DTo\\ComandasDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T21:53:51.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T21:53:51.466Z"
             }
           ]
         }

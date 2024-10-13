@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Restaurante.DTo.Empleados;
 using Restaurante.Entities;
+using Restaurante.Entities.Enums;
+using Restaurante.Filtros;
 using Restaurante.Services.Interfaces;
 
 namespace Restaurante.Controllers
@@ -16,6 +18,7 @@ namespace Restaurante.Controllers
             _empleadosService = empleadosService;
         }
 
+        [AccessFilter(Roles.Socio) ]
         [HttpGet()]
         public async Task<ActionResult<Productos>> GetAll()
         {
