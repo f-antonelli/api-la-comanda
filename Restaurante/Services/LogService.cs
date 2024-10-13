@@ -58,6 +58,7 @@ namespace SistemaTurnos.Service
 
                                        // new Claim("DisplayName", userEntity.UserName),
                      new Claim("Rol", permiso),
+                         new Claim(ClaimTypes.Role, permiso), // Usa ClaimTypes.Role
 
                     new Claim("UserName", userEntity.Nombre),
                 };

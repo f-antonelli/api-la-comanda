@@ -31,6 +31,7 @@ namespace Restaurante.Controllers
 
             return Ok(empleados);
         }
+        [AccessFilter(Roles.Socio, Roles.Bartender)]
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Empleados>> GetPedidoById(string id)
