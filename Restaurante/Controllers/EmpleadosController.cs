@@ -18,7 +18,7 @@ namespace Restaurante.Controllers
             _empleadosService = empleadosService;
         }
 
-        [AccessFilter(Roles.Socio) ]
+        [AccessFilter(Roles.Socio, Roles.Bartender)]
         [HttpGet()]
         public async Task<ActionResult<Productos>> GetAll()
         {

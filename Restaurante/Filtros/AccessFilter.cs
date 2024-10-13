@@ -8,9 +8,9 @@ namespace Restaurante.Filtros
 {
     public class AccessFilter : ActionFilterAttribute
     {
-        private readonly Roles _roles;
+        private readonly Roles [] _roles;
 
-        public AccessFilter(Roles roles)
+        public AccessFilter(params Roles[] roles)
         {
             _roles = roles;
         }
@@ -32,7 +32,7 @@ namespace Restaurante.Filtros
                     Roles ERol = Enum.Parse<Roles>(rol);
 
 
-                    if (_roles == ERol)
+                    if (_roles.Contains(ERol))
                     {
                         await next();
                     }
