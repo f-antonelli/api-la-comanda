@@ -5,6 +5,7 @@ using Restaurante.Dto.Pedido;
 using Restaurante.DTo;
 using Restaurante.Entities;
 using Restaurante.Entities.Enums;
+using Restaurante.Migrations;
 using Restaurante.Repository;
 using Restaurante.Services.Interfaces;
 using System.Collections.Generic;
@@ -251,6 +252,28 @@ namespace Restaurante.Services
             await _unitOfWork.Save();
             }
 
+        public async Task<List<PedidoResponseDto>> PedidosPendientesPorSector(int idSector)
+        {
+            Sectores sectorSelected = (Sectores)idSector;
+            if (sectorSelected == Sectores.Otro)
+            {
+                throw new Exception();
+            }
+
+            List<Pedidos> pedido = await _unitOfWork.PedidoRepository.GetAll();
+           
+            var pedidosFiltrados = pedido.Where(x => x.Producto.Sector == sectorSelected && x.Estado == EstadosPedido.Ordenado).ToList();
+            if (pedidosFiltrados == null)
+            {
+                throw new Exception("no hay pedidos");
+
+            }
+            var rsta = _mapper.Map<List<PedidoResponseDto>>(pedidosFiltrados);
+            return rsta;
+
+            //throw new NotImplementedException();
+
+        }
     }
 }
 

@@ -48,7 +48,8 @@ namespace SistemaTurnos.Service
             if (userEntity != null)
             {
                 var permiso = userEntity.Rol.ToString();
-                                
+                var sector = userEntity.Sector.ToString();
+
                 var claims = new[]
                 {
                     new Claim(JwtRegisteredClaimNames.Sub,_configuration["Jwt:Subject"]),
@@ -57,8 +58,9 @@ namespace SistemaTurnos.Service
                     new Claim("UserId", userEntity.Id.ToString()),
 
                                        // new Claim("DisplayName", userEntity.UserName),
-                     new Claim("Rol", permiso),
+            
                          new Claim(ClaimTypes.Role, permiso), // Usa ClaimTypes.Role
+                           new Claim("Sector", sector), 
 
                     new Claim("UserName", userEntity.Nombre),
                 };

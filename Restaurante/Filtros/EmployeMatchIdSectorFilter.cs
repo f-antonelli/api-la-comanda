@@ -6,7 +6,7 @@ using System.Security.Claims;
 
 namespace Restaurante.Filtros
 {
-    public class EmployeMatchIdFilter : ActionFilterAttribute
+    public class EmployeMatchIdSectorFilter : ActionFilterAttribute
     {
 
 
@@ -14,15 +14,15 @@ namespace Restaurante.Filtros
         public override async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
   
-            var rol = context.HttpContext.User.FindFirst(ClaimTypes.Role)?.Value;
-            string idRol = context.ActionArguments["id"].ToString();
-            int idRolInt = int.Parse(idRol);
+            var sector = context.HttpContext.User.FindFirst("Sector")?.Value;
+            string idsector = context.ActionArguments["id"].ToString();
+            int idsectorInt = int.Parse(idsector);
 
-            Roles rolSelected = (Roles)idRolInt;
+            Sectores sectorSelected = (Sectores)idsectorInt;
             
-            Roles ERol = Enum.Parse<Roles>(rol);
+            Sectores ESector = Enum.Parse<Sectores>(sector);
 
-            if (ERol == rolSelected)
+            if (ESector == sectorSelected)
             {
                 await next();
 

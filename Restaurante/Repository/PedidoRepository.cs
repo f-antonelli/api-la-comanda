@@ -31,7 +31,9 @@ namespace Restaurante.Repository
 
         public async Task<List<Pedidos>> GetAll()
         {
-            return await _context.Pedidos.ToListAsync();
+            return await _context.Pedidos
+                .Include(x => x.Producto)                    
+                .ToListAsync();
         }
 
         public async Task<Pedidos> Adds(Pedidos entity) {

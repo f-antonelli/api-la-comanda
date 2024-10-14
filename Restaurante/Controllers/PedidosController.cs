@@ -136,5 +136,12 @@ namespace Restaurante.Controllers
 
          }
 
+        [HttpGet("PedidosPendientesPorSector")]
+        public async Task<ActionResult<List<PedidoResponseDto>>> PedidosPendientesPorSector(int idSector)
+        {
+            return await _pedidosService.PedidosPendientesPorSector(idSector);
+
+        }
+
     }
 }
