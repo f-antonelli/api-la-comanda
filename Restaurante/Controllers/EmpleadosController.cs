@@ -18,7 +18,7 @@ namespace Restaurante.Controllers
             _empleadosService = empleadosService;
         }
 
-        [AccessFilter(Roles.Socio, Roles.Bartender)]
+
         [HttpGet()]
         public async Task<ActionResult<Productos>> GetAll()
         {
@@ -33,7 +33,7 @@ namespace Restaurante.Controllers
         }
 
      
-        [AccessFilter(Roles.Socio, Roles.Bartender)]
+ 
         [HttpGet("{id}")]
         public async Task<ActionResult<Empleados>> GetPedidoById(string id)
         {
@@ -52,6 +52,7 @@ namespace Restaurante.Controllers
                 throw;
             }
         }
+        [AccessFilter(Roles.Socio)]
 
         [HttpPost()]
         public async Task<ActionResult<Empleados>> CreateEmpleado(EmpleadosDto empleadoDto)
@@ -69,7 +70,8 @@ namespace Restaurante.Controllers
             {
                 throw;
             }
-        }
+        }     
+        [AccessFilter(Roles.Socio)]
 
         [HttpDelete("{id}")]
         public async Task<ActionResult<EmpleadosDto>> Delete(string id)
@@ -87,6 +89,7 @@ namespace Restaurante.Controllers
             }
 
         }
+        [AccessFilter(Roles.Socio)]
 
         [HttpGet("fechaIngreso")]
         public async Task<ActionResult<Productos>> GetEmpleadoIngreso()

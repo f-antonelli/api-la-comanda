@@ -2,6 +2,7 @@
 using Restaurante.DTo;
 using Restaurante.Entities;
 using Restaurante.Entities.Enums;
+using Restaurante.Filtros;
 using Restaurante.Services.Interfaces;
 
 namespace Restaurante.Controllers
@@ -17,17 +18,16 @@ namespace Restaurante.Controllers
             _mesaService = mesaService;
         }
 
-
-        [HttpPatch("CerrarMesa")]
+        [AccessFilter(Roles.Socio)]
+        [HttpPut("CerrarMesa")]
 
         public async Task<ActionResult<MesasDto>> CerrarMesa (int mesaId)
         {
             MesasDto mesaDto = await _mesaService.CerrarMesa(mesaId);
             return mesaDto;
         }
-
-        [HttpPatch("UpdateEstadoMesa")]
-
+        [AccessFilter(Roles.Mozo)]
+        [HttpPut("UpdateEstadoMesa")]
         public async Task<ActionResult<MesasDto>> UpdateEstadoMesa(int mesaId, EstadosMesa estadoMesa)
         {
             MesasDto mesaDto = await _mesaService.UpdateStatus(mesaId, estadoMesa);

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Restaurante.DTo;
 using Restaurante.Entities;
+using Restaurante.Entities.Enums;
+using Restaurante.Filtros;
 using Restaurante.Services.Interfaces;
 
 namespace Restaurante.Controllers
@@ -15,6 +17,7 @@ namespace Restaurante.Controllers
             _comandaService = comandaService;
 
         }
+        [AccessFilter(Roles.Mozo)]
 
         [HttpPost]
         public async Task<ActionResult<ComandasDto>> Create(ComandaCreateDto dto)

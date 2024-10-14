@@ -23,7 +23,7 @@ namespace Restaurante.Controllers
             _pedidosService = pedidosService;
         }
 
-        //[AccessFilter(Roles.Socio)]
+        [AccessFilter(Roles.Socio)]
         [HttpGet("{id}")]
         public async Task<ActionResult<PedidoResponseDto>> GetPedidoById(string id)
         {
@@ -96,7 +96,7 @@ namespace Restaurante.Controllers
             }
 
         }
-       // [AccessFilter(Roles.Socio)]
+        [AccessFilter(Roles.Socio)]
 
         [HttpGet("getAll")]
         public async Task<ActionResult<PedidoResponseDto>> GetAll()
