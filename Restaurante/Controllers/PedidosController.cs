@@ -43,22 +43,7 @@ namespace Restaurante.Controllers
             }
         }
 
-
-        [AccessFilter(Roles.Mozo)]
-        [HttpPut("update/{id}")]
-        public async Task<ActionResult<Productos>> update(string id, PedidoResponseDto pedidoDto)
-        {
-            try
-            {
-                await _pedidosService.Update(id, pedidoDto);
-                return Ok(true);
-
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }
+    
         [AccessFilter(Roles.Mozo)]
         [HttpPost("add")]
         public async Task<ActionResult<PedidoResponseDto>> CreatePedido(PedidoCreateRequestDto pedidoCreateDto)
@@ -77,25 +62,7 @@ namespace Restaurante.Controllers
                 throw;
             }
         }
-
-        [AccessFilter(Roles.Mozo)]
-
-        [HttpDelete("delete/{id}")]
-        public async Task<ActionResult<PedidoResponseDto>> Delete(string id)
-        {
-            try
-            {
-                await _pedidosService.Delete(id);
-
-            
-                    return Ok(true);
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-
-        }
+   
         [AccessFilter(Roles.Socio)]
 
         [HttpGet("getAll")]
@@ -157,5 +124,40 @@ namespace Restaurante.Controllers
 
         }
 
+
+        /*
+[AccessFilter(Roles.Mozo)]
+[HttpPut("update/{id}")]
+public async Task<ActionResult<Productos>> update(string id, PedidoResponseDto pedidoDto)
+{
+   try
+   {
+       await _pedidosService.Update(id, pedidoDto);
+       return Ok(true);
+
+   }
+   catch (Exception ex)
+   {
+       throw;
+   }
+}*/
+        /*
+        [AccessFilter(Roles.Mozo)]
+        [HttpDelete("delete/{id}")]
+        public async Task<ActionResult<PedidoResponseDto>> Delete(string id)
+        {
+            try
+            {
+                await _pedidosService.Delete(id);
+
+            
+                    return Ok(true);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+        }*/
     }
 }

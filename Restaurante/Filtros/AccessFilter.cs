@@ -31,7 +31,9 @@ namespace Restaurante.Filtros
             }
             else
             {
-                throw new UnauthorizedAccessException();
+             
+                context.Result = new UnauthorizedObjectResult("No tienes permisos para realizar esta accion");
+                return;
             }
 
         }    

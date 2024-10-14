@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Restaurante.Entities;
 using Restaurante.Services.Interfaces;
-
+/*
 namespace Restaurante.Controllers
 {
     [ApiController]
@@ -68,3 +68,4 @@ namespace Restaurante.Controllers
         }
     }
 }
+*/
