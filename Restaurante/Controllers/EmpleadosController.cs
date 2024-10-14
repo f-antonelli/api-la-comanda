@@ -32,7 +32,7 @@ namespace Restaurante.Controllers
             return Ok(empleados);
         }
 
-        [EmployeMatchIdSectorFilter]
+     
         [AccessFilter(Roles.Socio, Roles.Bartender)]
         [HttpGet("{id}")]
         public async Task<ActionResult<Empleados>> GetPedidoById(string id)

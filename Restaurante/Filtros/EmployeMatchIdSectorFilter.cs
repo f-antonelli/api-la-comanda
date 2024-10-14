@@ -15,7 +15,7 @@ namespace Restaurante.Filtros
         {
   
             var sector = context.HttpContext.User.FindFirst("Sector")?.Value;
-            string idsector = context.ActionArguments["id"].ToString();
+            string idsector = context.ActionArguments["idSector"].ToString();
             int idsectorInt = int.Parse(idsector);
 
             Sectores sectorSelected = (Sectores)idsectorInt;

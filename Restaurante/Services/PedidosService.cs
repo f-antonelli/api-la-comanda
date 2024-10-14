@@ -87,14 +87,14 @@ namespace Restaurante.Services
             _unitOfWork.Save();
         }
 
-        public async Task<IEnumerable<Pedidos>> GetAll()
+        public async Task<IEnumerable<PedidoResponseDto>> GetAll()
         {
             var pedidos = await _unitOfWork.PedidoRepository.GetAll();
-            return _mapper.Map<IEnumerable<Pedidos>>(pedidos);
+            return _mapper.Map<IEnumerable<PedidoResponseDto>>(pedidos);
          
         }
 
-        public async Task<Pedidos> GetById(string id)
+        public async Task<PedidoResponseDto> GetById(string id)
         {
             var pedido = await _unitOfWork.PedidoRepository.GetById(int.Parse(id));
 
@@ -103,7 +103,7 @@ namespace Restaurante.Services
                 throw new Exception("El pedido no existe.");
             }
 
-            return _mapper.Map<Pedidos>(pedido);
+            return _mapper.Map<PedidoResponseDto>(pedido);
         }
 
         public async Task<IEnumerable<PedidoResponseDto>> Top5ProductosMasVendidos()

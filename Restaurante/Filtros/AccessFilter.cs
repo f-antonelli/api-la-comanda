@@ -21,7 +21,7 @@ namespace Restaurante.Filtros
         {
   
             var rol = context.HttpContext.User.FindFirst(ClaimTypes.Role)?.Value;
-            var contenido = context.ActionArguments["id"];
+          
             Roles ERol = Enum.Parse<Roles>(rol);
 
             if (_roles.Contains(ERol))
