@@ -6,25 +6,23 @@ using System.Security.Claims;
 
 namespace Restaurante.Filtros
 {
-    public class AccessFilter : ActionFilterAttribute
+    public class EmployeMatchIdFilter : ActionFilterAttribute
     {
-        private readonly Roles [] _roles;
 
-        public AccessFilter(params Roles[] roles)
-        {
-            _roles = roles;
-        }
 
-    
 
         public override async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
   
             var rol = context.HttpContext.User.FindFirst(ClaimTypes.Role)?.Value;
-            var contenido = context.ActionArguments["id"];
+            string idRol = context.ActionArguments["id"].ToString();
+            int idRolInt = int.Parse(idRol);
+
+            Roles rolSelected = (Roles)idRolInt;
+            
             Roles ERol = Enum.Parse<Roles>(rol);
 
-            if (_roles.Contains(ERol))
+            if (ERol == rolSelected)
             {
                 await next();
 
