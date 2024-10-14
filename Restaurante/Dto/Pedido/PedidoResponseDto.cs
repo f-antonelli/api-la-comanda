@@ -6,7 +6,9 @@ namespace Restaurante.Dto.Pedido
     {
         public int Id { get; set; }
         public int ComandaId { get; set; }
+        public string Producto { get; set; }
         public int ProductoId { get; set; }
+
         public int Cantidad { get; set; }
         public string Estado { get; set; }
         public DateTime FechaCreación { get; set; }

@@ -18,11 +18,15 @@ namespace Restaurante.Profiles
             CreateMap<Empleados, EmpleadosDto>().ReverseMap();
             CreateMap<Mesas, MesasDto>()
                 .ReverseMap();
-            CreateMap<Pedidos, PedidoResponseDto>().ReverseMap();
+            CreateMap<Pedidos, PedidoResponseDto>()
+    .ForMember(dest => dest.Producto, opt => opt.MapFrom(src => src.Producto.Nombre))
+        .ReverseMap();
+
+              
             CreateMap<Productos, ProductoDto>().ReverseMap();
             CreateMap<PedidoCreateRequestDto, Pedidos>();
       
-            CreateMap<Pedidos, PedidoResponseDto>();
+        
             
         }
     }
