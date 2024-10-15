@@ -80,9 +80,9 @@ namespace Restaurante.Controllers
         [AccessFilter(Roles.Cocinero,Roles.Bartender, Roles.Cervecero)]
 
         [HttpPut("ActualizarAPreparación")]
-        public async Task<ActionResult<PedidoResponseDto>> ActualizarAPreparación(string codigoPedido, int tiempoEstimado)
+        public async Task<ActionResult<PedidoResponseDto>> ActualizarAPreparación(int idPedido, int tiempoEstimado)
         {
-            var pedido = await _pedidosService.ActualizarAPreparación(codigoPedido, tiempoEstimado);
+            var pedido = await _pedidosService.ActualizarAPreparación(idPedido, tiempoEstimado);
 
            
 

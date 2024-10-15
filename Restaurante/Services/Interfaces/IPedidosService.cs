@@ -12,7 +12,7 @@ namespace Restaurante.Services.Interfaces
         Task<IEnumerable<PedidoResponseDto>> GetAll();
         Task<PedidoResponseDto> GetById(string id);
 
-        Task<PedidoResponseDto> ActualizarAPreparación(string codigoPedido, int tiempoEstimadoMinutos);
+        Task<PedidoResponseDto> ActualizarAPreparación(int idPedido, int tiempoEstimadoMinutos);
         Task<PedidoResponseDto> ActualizarAListoParaServir(int idPedido, int idEmpleado);
         Task<TimeSpan> ClienteMiraPedido(string codigoPedido, string codigoMesa);
         Task<List<PedidoResponseDto>> PedidosPendientesPorSector(int idSector);
