@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Restaurante.DTo;
 using Restaurante.Entities;
+using Restaurante.Entities.Enums;
 using Restaurante.Repository;
 using Restaurante.Services.Interfaces;
 
@@ -11,13 +12,25 @@ namespace Restaurante.Services
     {
         private readonly ComandaRepository _comandaRepository;
         private readonly IMapper _mapper;
-        public ComandaService(ComandaRepository comandaRepository, IMapper mapper) {
+        private readonly MesaRepository _mesaRepository;
+
+        public ComandaService(ComandaRepository comandaRepository, IMapper mapper, MesaRepository mesaRepository)
+        {
             _comandaRepository = comandaRepository;
             _mapper = mapper;
-                }
+            _mesaRepository = mesaRepository;
+        }
         public async Task<ComandasDto> Create(ComandaCreateDto dto)
         {
-            var comanda = _mapper.Map<Comandas>(dto);
+              var mesId = dto.MesaId;
+            var mesa = await _mesaRepository.GetById(mesId);
+            if (mesa.Estado != EstadosMesa.Cerrada) {
+                throw new Exception("la mesa no esta disponible actualmente");
+            }
+            mesa.Estado = EstadosMesa.ClienteEsperandoPedido;
+            await _mesaRepository.Edit(mesa);
+            var comanda = _mapper.Map<Comandas>(dto);          
+
 
             await _comandaRepository.Add(comanda);
 
