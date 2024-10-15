@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using SistemaTurnos.Service;
+using Restaurante.Filtros;
 
 
 
@@ -88,6 +89,7 @@ builder.Services.AddScoped<IMesaService, MesaService>();
 builder.Services.AddScoped<ILogService, LogService>();
 
 
+
 //Repository
 builder.Services.AddScoped<EmpleadoPedidosRepository>();
 
@@ -100,7 +102,8 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(x => new UnitOfWork(x.GetReq
     x.GetRequiredService<IPedidoRepository>(), x.GetRequiredService<IEmpleadoRepository>()));
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
-
+//Filtro que utiliza servicio
+builder.Services.AddScoped<IsEmployeePedidoFilter>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -16,7 +16,9 @@ namespace Restaurante.Repository
 
         public async Task<Pedidos> GetById(int id)
         {
-            return await _context.Pedidos.Where(x => x.Id == id).FirstOrDefaultAsync();
+            return await _context.Pedidos
+                .Include(p => p.Producto)
+                .Where(x => x.Id == id).FirstOrDefaultAsync();
         }
         public async void Delete(Pedidos entity)
         {

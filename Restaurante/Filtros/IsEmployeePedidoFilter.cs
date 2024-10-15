@@ -10,23 +10,23 @@ namespace Restaurante.Filtros
     public class IsEmployeePedidoFilter : ActionFilterAttribute
     {
 
-        private readonly IPedidoRepository _pedidoRepository;
-        public IsEmployeePedidoFilter(IPedidoRepository pedidoRepository)
+        private readonly IPedidoRepository _pedidosRepository;
+        public IsEmployeePedidoFilter(IPedidoRepository pedidosRepository)
         {
-            _pedidoRepository = pedidoRepository;
+            _pedidosRepository = pedidosRepository;
         }
         public override async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
   
-            var sector = context.HttpContext.User.FindFirst("Sector")?.Value;
-            string idsector = context.ActionArguments["idSector"].ToString();
-            int idsectorInt = int.Parse(idsector);
 
-            Sectores sectorSelected = (Sectores)idsectorInt;
-            
+            var sector = context.HttpContext.User.FindFirst("Sector")?.Value;
+            string idPedido = context.ActionArguments["idPedido"].ToString();
+
+            var pedido = await _pedidosRepository.GetById(int.Parse(idPedido));
             Sectores ESector = Enum.Parse<Sectores>(sector);
 
-            if (ESector == sectorSelected)
+
+            if (pedido.Producto.Sector == ESector)
             {
                 await next();
 

@@ -78,6 +78,7 @@ namespace Restaurante.Controllers
             return Ok(productos);
         }
         [AccessFilter(Roles.Cocinero,Roles.Bartender, Roles.Cervecero)]
+        [ServiceFilter(typeof(IsEmployeePedidoFilter))]
 
         [HttpPut("ActualizarAPreparación")]
         public async Task<ActionResult<PedidoResponseDto>> ActualizarAPreparación(int idPedido, int tiempoEstimado)
@@ -88,7 +89,9 @@ namespace Restaurante.Controllers
 
             return Ok(pedido);
         }
+
         [AccessFilter(Roles.Cocinero, Roles.Bartender, Roles.Cervecero)]
+        [ServiceFilter(typeof(IsEmployeePedidoFilter))]
 
         [HttpPut("ActualizarAListoParaServir")]
         public async Task<ActionResult<PedidoResponseDto>> ActualizarAListoParaServir(int idPedido)
