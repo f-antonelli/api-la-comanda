@@ -35,7 +35,11 @@ namespace Restaurante.Controllers
                 {
                     return NotFound();
                 }
-                return Ok(pedido);
+                if(pedido.TiempoEstimado == new TimeSpan())
+                {
+                    return NotFound("No hay un tiempo estimado");
+                }
+                return Ok(pedido.TiempoEstimado);
             }
             catch (Exception ex)
             {

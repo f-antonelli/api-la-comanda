@@ -33,6 +33,7 @@ namespace Restaurante.Controllers
             MesasDto mesaDto = await _mesaService.UpdateStatus(mesaId, estadoMesa);
             return mesaDto;
         }
+        [AccessFilter(Roles.Socio)]
         [HttpGet()]
         public async Task<ActionResult<List<MesasDto>>> GetAll()
         {
