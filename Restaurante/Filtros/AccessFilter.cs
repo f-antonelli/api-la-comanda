@@ -19,9 +19,15 @@ namespace Restaurante.Filtros
 
         public override async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-  
+
+           
             var rol = context.HttpContext.User.FindFirst(ClaimTypes.Role)?.Value;
-          
+            if (string.IsNullOrEmpty(rol))
+            {
+                context.Result = new UnauthorizedResult();
+                return;
+            }
+
             Roles ERol = Enum.Parse<Roles>(rol);
 
             if (_roles.Contains(ERol))
