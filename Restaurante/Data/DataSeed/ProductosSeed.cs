@@ -16,7 +16,8 @@ namespace Restaurante.Data.Seed
                   Sector = Sectores.Comida,
                   Nombre = "Milanesa a Caballo",
                   Descripcion = "Milanesa de carne con dos huevos fritos encima.",
-                  Precio = 12.99f
+                  Precio = 12.99f,
+                  Stock = 12
               },
               new Productos // Stock inicial
               {
@@ -24,7 +25,9 @@ namespace Restaurante.Data.Seed
                   Sector = Sectores.Comida,
                   Nombre = "Hamburguesas de Garbanzo",
                   Descripcion = "Dos hamburguesas vegetarianas hechas de garbanzo.",
-                  Precio = 9.99f
+                  Precio = 9.99f,
+                  Stock = 8
+
               },
               new Productos // Stock inicial
               {
@@ -32,7 +35,9 @@ namespace Restaurante.Data.Seed
                   Sector = Sectores.Cerveza,
                   Nombre = "Corona",
                   Descripcion = "Botella de cerveza Corona 355ml.",
-                  Precio = 3.50f
+                  Precio = 3.50f,
+                    Stock = 3
+
               },
               new Productos // Stock inicial
               {
@@ -40,7 +45,9 @@ namespace Restaurante.Data.Seed
                   Sector = Sectores.Bebida,
                   Nombre = "Daikiri",
                   Descripcion = "Cóctel de ron con jugo de limón y azúcar.",
-                  Precio = 7.50f
+                  Precio = 7.50f,
+                  Stock = 2
+
               }
 
             );

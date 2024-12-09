@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Restaurante.DTo.Empleados;
 using Restaurante.Entities;
+using Restaurante.Entities.Enums;
+using Restaurante.Filtros;
 using Restaurante.Services.Interfaces;
 
 namespace Restaurante.Controllers
@@ -16,6 +18,7 @@ namespace Restaurante.Controllers
             _empleadosService = empleadosService;
         }
 
+
         [HttpGet()]
         public async Task<ActionResult<Productos>> GetAll()
         {
@@ -29,6 +32,8 @@ namespace Restaurante.Controllers
             return Ok(empleados);
         }
 
+     
+ 
         [HttpGet("{id}")]
         public async Task<ActionResult<Empleados>> GetPedidoById(string id)
         {
@@ -47,6 +52,7 @@ namespace Restaurante.Controllers
                 throw;
             }
         }
+        [AccessFilter(Roles.Socio)]
 
         [HttpPost()]
         public async Task<ActionResult<Empleados>> CreateEmpleado(EmpleadosDto empleadoDto)
@@ -64,7 +70,8 @@ namespace Restaurante.Controllers
             {
                 throw;
             }
-        }
+        }     
+        [AccessFilter(Roles.Socio)]
 
         [HttpDelete("{id}")]
         public async Task<ActionResult<EmpleadosDto>> Delete(string id)
@@ -82,6 +89,7 @@ namespace Restaurante.Controllers
             }
 
         }
+        [AccessFilter(Roles.Socio)]
 
         [HttpGet("fechaIngreso")]
         public async Task<ActionResult<Productos>> GetEmpleadoIngreso()

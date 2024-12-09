@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anton\\OneDrive\\Escritorio\\labwebservidor\\api-la-comanda\\Restaurante\\Restaurante.csproj": {}
+    "C:\\Users\\anton\\OneDrive\\Documentos\\api-la-comanda\\Restaurante\\Restaurante.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anton\\OneDrive\\Escritorio\\labwebservidor\\api-la-comanda\\Restaurante\\Restaurante.csproj": {
+    "C:\\Users\\anton\\OneDrive\\Documentos\\api-la-comanda\\Restaurante\\Restaurante.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anton\\OneDrive\\Escritorio\\labwebservidor\\api-la-comanda\\Restaurante\\Restaurante.csproj",
+        "projectUniqueName": "C:\\Users\\anton\\OneDrive\\Documentos\\api-la-comanda\\Restaurante\\Restaurante.csproj",
         "projectName": "Restaurante",
-        "projectPath": "C:\\Users\\anton\\OneDrive\\Escritorio\\labwebservidor\\api-la-comanda\\Restaurante\\Restaurante.csproj",
+        "projectPath": "C:\\Users\\anton\\OneDrive\\Documentos\\api-la-comanda\\Restaurante\\Restaurante.csproj",
         "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anton\\OneDrive\\Escritorio\\labwebservidor\\api-la-comanda\\Restaurante\\obj\\",
+        "outputPath": "C:\\Users\\anton\\OneDrive\\Documentos\\api-la-comanda\\Restaurante\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,6 +52,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

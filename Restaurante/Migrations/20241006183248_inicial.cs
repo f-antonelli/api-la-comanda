@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Restaurante.Migrations
 {
-    public partial class initial : Migration
+    public partial class inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -50,7 +50,8 @@ namespace Restaurante.Migrations
                     Sector = table.Column<int>(type: "int", nullable: false),
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Precio = table.Column<float>(type: "real", nullable: false)
+                    Precio = table.Column<float>(type: "real", nullable: false),
+                    stock = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -164,13 +165,13 @@ namespace Restaurante.Migrations
 
             migrationBuilder.InsertData(
                 table: "Productos",
-                columns: new[] { "Id", "Descripcion", "Nombre", "Precio", "Sector" },
+                columns: new[] { "Id", "Descripcion", "Nombre", "Precio", "Sector", "stock" },
                 values: new object[,]
                 {
-                    { 1, "Milanesa de carne con dos huevos fritos encima.", "Milanesa a Caballo", 12.99f, 0 },
-                    { 2, "Dos hamburguesas vegetarianas hechas de garbanzo.", "Hamburguesas de Garbanzo", 9.99f, 0 },
-                    { 3, "Botella de cerveza Corona 355ml.", "Corona", 3.5f, 2 },
-                    { 4, "Cóctel de ron con jugo de limón y azúcar.", "Daikiri", 7.5f, 1 }
+                    { 1, "Milanesa de carne con dos huevos fritos encima.", "Milanesa a Caballo", 12.99f, 0, 0 },
+                    { 2, "Dos hamburguesas vegetarianas hechas de garbanzo.", "Hamburguesas de Garbanzo", 9.99f, 0, 0 },
+                    { 3, "Botella de cerveza Corona 355ml.", "Corona", 3.5f, 2, 0 },
+                    { 4, "Cóctel de ron con jugo de limón y azúcar.", "Daikiri", 7.5f, 1, 0 }
                 });
 
             migrationBuilder.InsertData(
@@ -212,14 +213,14 @@ namespace Restaurante.Migrations
                 {
                     { 1, 5, 1 },
                     { 2, 5, 2 },
-                    { 3, 5, 3 },
-                    { 4, 5, 4 },
-                    { 5, 5, 5 },
+                    { 3, 3, 3 },
+                    { 4, 1, 4 },
+                    { 5, 1, 5 },
                     { 6, 5, 6 },
-                    { 7, 3, 7 },
+                    { 7, 5, 7 },
                     { 8, 5, 8 },
-                    { 9, 5, 9 },
-                    { 10, 5, 10 }
+                    { 9, 1, 9 },
+                    { 10, 1, 10 }
                 });
 
             migrationBuilder.CreateIndex(

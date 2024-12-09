@@ -342,6 +342,10 @@ namespace Restaurante.Migrations
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
 
+                    b.Property<string>("CodigoPedido")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("ComandaId")
                         .HasColumnType("int");
 
@@ -351,13 +355,13 @@ namespace Restaurante.Migrations
                     b.Property<DateTime>("FechaCreación")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("FechaFinalizacion")
+                    b.Property<DateTime?>("FechaFinalizacion")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("ProductoId")
                         .HasColumnType("int");
 
-                    b.Property<TimeSpan>("TiempoEstimado")
+                    b.Property<TimeSpan?>("TiempoEstimado")
                         .HasColumnType("time");
 
                     b.HasKey("Id");
@@ -373,28 +377,27 @@ namespace Restaurante.Migrations
                         {
                             Id = 1,
                             Cantidad = 2,
+                            CodigoPedido = "0e385",
                             ComandaId = 1,
                             Estado = 0,
                             FechaCreación = new DateTime(2024, 9, 4, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            FechaFinalizacion = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ProductoId = 1,
-                            TiempoEstimado = new TimeSpan(0, 0, 0, 0, 0)
+                            ProductoId = 1
                         },
                         new
                         {
                             Id = 2,
                             Cantidad = 1,
+                            CodigoPedido = "d4ec1",
                             ComandaId = 2,
                             Estado = 0,
                             FechaCreación = new DateTime(2024, 9, 4, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            FechaFinalizacion = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ProductoId = 2,
-                            TiempoEstimado = new TimeSpan(0, 0, 0, 0, 0)
+                            ProductoId = 2
                         },
                         new
                         {
                             Id = 3,
                             Cantidad = 3,
+                            CodigoPedido = "bac8f",
                             ComandaId = 1,
                             Estado = 3,
                             FechaCreación = new DateTime(2024, 9, 4, 11, 30, 0, 0, DateTimeKind.Unspecified),
@@ -406,10 +409,10 @@ namespace Restaurante.Migrations
                         {
                             Id = 4,
                             Cantidad = 4,
+                            CodigoPedido = "9d4ac",
                             ComandaId = 3,
                             Estado = 1,
                             FechaCreación = new DateTime(2024, 9, 4, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            FechaFinalizacion = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ProductoId = 4,
                             TiempoEstimado = new TimeSpan(0, 1, 15, 0, 0)
                         },
@@ -417,6 +420,7 @@ namespace Restaurante.Migrations
                         {
                             Id = 5,
                             Cantidad = 2,
+                            CodigoPedido = "47468",
                             ComandaId = 2,
                             Estado = 3,
                             FechaCreación = new DateTime(2024, 9, 4, 10, 0, 0, 0, DateTimeKind.Unspecified),
@@ -428,10 +432,10 @@ namespace Restaurante.Migrations
                         {
                             Id = 6,
                             Cantidad = 1,
+                            CodigoPedido = "d71bc",
                             ComandaId = 2,
                             Estado = 1,
                             FechaCreación = new DateTime(2024, 9, 4, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            FechaFinalizacion = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ProductoId = 1,
                             TiempoEstimado = new TimeSpan(0, 1, 10, 0, 0)
                         },
@@ -439,6 +443,7 @@ namespace Restaurante.Migrations
                         {
                             Id = 7,
                             Cantidad = 5,
+                            CodigoPedido = "623b4",
                             ComandaId = 3,
                             Estado = 3,
                             FechaCreación = new DateTime(2024, 9, 4, 17, 30, 0, 0, DateTimeKind.Unspecified),
@@ -450,10 +455,10 @@ namespace Restaurante.Migrations
                         {
                             Id = 8,
                             Cantidad = 3,
+                            CodigoPedido = "48d94",
                             ComandaId = 1,
                             Estado = 1,
                             FechaCreación = new DateTime(2024, 9, 4, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            FechaFinalizacion = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ProductoId = 3,
                             TiempoEstimado = new TimeSpan(0, 1, 0, 0, 0)
                         },
@@ -461,6 +466,7 @@ namespace Restaurante.Migrations
                         {
                             Id = 9,
                             Cantidad = 4,
+                            CodigoPedido = "40560",
                             ComandaId = 3,
                             Estado = 2,
                             FechaCreación = new DateTime(2024, 9, 4, 11, 0, 0, 0, DateTimeKind.Unspecified),
@@ -472,6 +478,7 @@ namespace Restaurante.Migrations
                         {
                             Id = 10,
                             Cantidad = 2,
+                            CodigoPedido = "5b895",
                             ComandaId = 2,
                             Estado = 2,
                             FechaCreación = new DateTime(2024, 9, 4, 18, 0, 0, 0, DateTimeKind.Unspecified),
@@ -503,6 +510,9 @@ namespace Restaurante.Migrations
                     b.Property<int>("Sector")
                         .HasColumnType("int");
 
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Productos");
@@ -514,7 +524,8 @@ namespace Restaurante.Migrations
                             Descripcion = "Milanesa de carne con dos huevos fritos encima.",
                             Nombre = "Milanesa a Caballo",
                             Precio = 12.99f,
-                            Sector = 0
+                            Sector = 0,
+                            Stock = 12
                         },
                         new
                         {
@@ -522,7 +533,8 @@ namespace Restaurante.Migrations
                             Descripcion = "Dos hamburguesas vegetarianas hechas de garbanzo.",
                             Nombre = "Hamburguesas de Garbanzo",
                             Precio = 9.99f,
-                            Sector = 0
+                            Sector = 0,
+                            Stock = 8
                         },
                         new
                         {
@@ -530,7 +542,8 @@ namespace Restaurante.Migrations
                             Descripcion = "Botella de cerveza Corona 355ml.",
                             Nombre = "Corona",
                             Precio = 3.5f,
-                            Sector = 2
+                            Sector = 2,
+                            Stock = 3
                         },
                         new
                         {
@@ -538,7 +551,8 @@ namespace Restaurante.Migrations
                             Descripcion = "Cóctel de ron con jugo de limón y azúcar.",
                             Nombre = "Daikiri",
                             Precio = 7.5f,
-                            Sector = 1
+                            Sector = 1,
+                            Stock = 2
                         });
                 });
 

@@ -12,8 +12,8 @@ using Restaurante.Data;
 namespace Restaurante.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240924203610_initial")]
-    partial class initial
+    [Migration("20241006185609_stock")]
+    partial class stock
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -104,19 +104,19 @@ namespace Restaurante.Migrations
                         new
                         {
                             Id = 3,
-                            EmpleadoId = 5,
+                            EmpleadoId = 3,
                             PedidoId = 3
                         },
                         new
                         {
                             Id = 4,
-                            EmpleadoId = 5,
+                            EmpleadoId = 1,
                             PedidoId = 4
                         },
                         new
                         {
                             Id = 5,
-                            EmpleadoId = 5,
+                            EmpleadoId = 1,
                             PedidoId = 5
                         },
                         new
@@ -128,7 +128,7 @@ namespace Restaurante.Migrations
                         new
                         {
                             Id = 7,
-                            EmpleadoId = 3,
+                            EmpleadoId = 5,
                             PedidoId = 7
                         },
                         new
@@ -140,13 +140,13 @@ namespace Restaurante.Migrations
                         new
                         {
                             Id = 9,
-                            EmpleadoId = 5,
+                            EmpleadoId = 1,
                             PedidoId = 9
                         },
                         new
                         {
                             Id = 10,
-                            EmpleadoId = 5,
+                            EmpleadoId = 1,
                             PedidoId = 10
                         });
                 });
@@ -505,6 +505,9 @@ namespace Restaurante.Migrations
                     b.Property<int>("Sector")
                         .HasColumnType("int");
 
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Productos");
@@ -516,7 +519,8 @@ namespace Restaurante.Migrations
                             Descripcion = "Milanesa de carne con dos huevos fritos encima.",
                             Nombre = "Milanesa a Caballo",
                             Precio = 12.99f,
-                            Sector = 0
+                            Sector = 0,
+                            Stock = 12
                         },
                         new
                         {
@@ -524,7 +528,8 @@ namespace Restaurante.Migrations
                             Descripcion = "Dos hamburguesas vegetarianas hechas de garbanzo.",
                             Nombre = "Hamburguesas de Garbanzo",
                             Precio = 9.99f,
-                            Sector = 0
+                            Sector = 0,
+                            Stock = 8
                         },
                         new
                         {
@@ -532,7 +537,8 @@ namespace Restaurante.Migrations
                             Descripcion = "Botella de cerveza Corona 355ml.",
                             Nombre = "Corona",
                             Precio = 3.5f,
-                            Sector = 2
+                            Sector = 2,
+                            Stock = 3
                         },
                         new
                         {
@@ -540,7 +546,8 @@ namespace Restaurante.Migrations
                             Descripcion = "Cóctel de ron con jugo de limón y azúcar.",
                             Nombre = "Daikiri",
                             Precio = 7.5f,
-                            Sector = 1
+                            Sector = 1,
+                            Stock = 2
                         });
                 });
 
