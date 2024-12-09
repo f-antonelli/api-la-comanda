@@ -47,6 +47,7 @@ namespace Restaurante.Controllers
             return Ok(productos);
         }
 
+        [AccessFilter(Roles.Socio)]
         [HttpGet("operacionesPorSector")]
         public async Task<IActionResult> ObtenerOperacionesPorSector()
         {
@@ -54,6 +55,7 @@ namespace Restaurante.Controllers
             return Ok(operaciones);
         }
 
+        [AccessFilter(Roles.Socio)]
         [HttpGet("operacionesPorEmpleadoSector")]
         public async Task<IActionResult> ObtenerOperacionesPorEmpleadoYSector()
         {

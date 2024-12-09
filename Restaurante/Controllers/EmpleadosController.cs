@@ -4,6 +4,7 @@ using Restaurante.Entities;
 using Restaurante.Entities.Enums;
 using Restaurante.Filtros;
 using Restaurante.Services.Interfaces;
+using SistemaTurnos.Controllers;
 
 namespace Restaurante.Controllers
 {
@@ -12,9 +13,11 @@ namespace Restaurante.Controllers
     public class EmpleadosController : ControllerBase
     {
         private readonly IEmpleadosService _empleadosService;
+        private readonly ILogger<LoginController> _logger;
 
-        public EmpleadosController(IEmpleadosService empleadosService)
+        public EmpleadosController(ILogger<LoginController> logger,IEmpleadosService empleadosService)
         {
+            _logger = logger;
             _empleadosService = empleadosService;
         }
 
@@ -49,6 +52,7 @@ namespace Restaurante.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 throw;
             }
         }
@@ -68,6 +72,7 @@ namespace Restaurante.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 throw;
             }
         }     
@@ -85,6 +90,7 @@ namespace Restaurante.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 throw;
             }
 
