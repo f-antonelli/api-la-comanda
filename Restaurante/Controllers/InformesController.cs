@@ -43,21 +43,6 @@ namespace Restaurante.Controllers
 
             return Ok(productos);
         }
-        
-
-        /*
-        [HttpGet("PedidosFueraDeTiempo")]
-        public async Task<ActionResult<Productos>> PedidosFueraDeTiempo()
-        {
-            var pedidos = await _pedidosService.PedidosFueraDeTiempo();
-
-            if (pedidos == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(pedidos);
-        }
 
         [HttpGet("operacionesPorSector")]
         public async Task<IActionResult> ObtenerOperacionesPorSector()
@@ -71,6 +56,6 @@ namespace Restaurante.Controllers
         {
             var operaciones = await _pedidosService.OperacionesPorEmpleadoYSector();
             return Ok(operaciones);
-        }*/
+        }
     }
 }
