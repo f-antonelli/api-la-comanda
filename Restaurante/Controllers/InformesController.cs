@@ -2,6 +2,8 @@
 using Restaurante.Dto.Pedido;
 using Restaurante.DTo;
 using Restaurante.Entities;
+using Restaurante.Entities.Enums;
+using Restaurante.Filtros;
 using Restaurante.Repository;
 using Restaurante.Services.Interfaces;
 
@@ -16,6 +18,7 @@ namespace Restaurante.Controllers
             _pedidosService = pedidosService;
         }
 
+        [AccessFilter(Roles.Socio)]
 
         [HttpGet("Top5ProductosMasVendidos")]
         public async Task<ActionResult<List<ProductoResponseDto>>> Top5ProductosMasVendidos()
@@ -30,9 +33,9 @@ namespace Restaurante.Controllers
             return Ok(productos);
         }
 
-        
+        [AccessFilter(Roles.Socio)]
         [HttpGet("Top5ProductosMenosVendidos")]
-        public async Task<ActionResult<Productos>> Top5ProductosMenosVendidos()
+        public async Task<ActionResult<List<ProductoResponseDto>>>Top5ProductosMenosVendidos()
         {
             var productos = await _pedidosService.Top5ProductosMenosVendidos();
 
