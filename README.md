@@ -69,3 +69,13 @@ Usuarios utiles
 | `cocinero1`  | `cocinero1`  | `cocinero`  |
 | `mozo1`      | `mozo1`      | `mozo`      |
 | `admin1`     | `admin1`     | `admin`     |
+
+## Flujo de generacion de pedido
+
+- Generar login con rol de mozo
+- Cargar un pedido (/Pedidos/add), para este caso de prueba agregar producto numero 1.
+- Generar login con rol de cocinero
+- Actualizar a pedido en preparacion (/Pedidos/ActualizarAPreparacion) asignando el tiempoEstimado.
+- Actualizar a pedido a listo para servir (/Pedidos/ActualizarAListoParaServir).
+- Generar login con rol de mozo
+- Servir el pedido (/Pedidos/ServirPedidos)
