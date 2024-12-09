@@ -26,7 +26,10 @@ namespace Restaurante.Profiles
             CreateMap<Productos, ProductoDto>().ReverseMap();
             CreateMap<PedidoCreateRequestDto, Pedidos>();
       
-        
+            CreateMap<Pedidos,ProductoResponseDto>()
+                    .ForMember(dest => dest.Nombre, opt => opt.MapFrom(src => src.Producto.Nombre))
+                                       
+                .ReverseMap();
             
         }
     }

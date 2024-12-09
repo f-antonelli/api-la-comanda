@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Restaurante.Dto.Pedido;
+using Restaurante.DTo;
 using Restaurante.Entities;
+using Restaurante.Repository;
 using Restaurante.Services.Interfaces;
-/*
+
 namespace Restaurante.Controllers
 {
     [ApiController]
@@ -15,7 +18,7 @@ namespace Restaurante.Controllers
 
 
         [HttpGet("Top5ProductosMasVendidos")]
-        public async Task<ActionResult<Productos>> Top5ProductosMasVendidos()
+        public async Task<ActionResult<List<ProductoResponseDto>>> Top5ProductosMasVendidos()
         {
             var productos = await _pedidosService.Top5ProductosMasVendidos();
 
@@ -27,6 +30,7 @@ namespace Restaurante.Controllers
             return Ok(productos);
         }
 
+        
         [HttpGet("Top5ProductosMenosVendidos")]
         public async Task<ActionResult<Productos>> Top5ProductosMenosVendidos()
         {
@@ -39,7 +43,9 @@ namespace Restaurante.Controllers
 
             return Ok(productos);
         }
+        
 
+        /*
         [HttpGet("PedidosFueraDeTiempo")]
         public async Task<ActionResult<Productos>> PedidosFueraDeTiempo()
         {
@@ -65,7 +71,6 @@ namespace Restaurante.Controllers
         {
             var operaciones = await _pedidosService.OperacionesPorEmpleadoYSector();
             return Ok(operaciones);
-        }
+        }*/
     }
 }
-*/

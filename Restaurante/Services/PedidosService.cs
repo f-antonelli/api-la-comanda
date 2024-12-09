@@ -106,40 +106,51 @@ namespace Restaurante.Services
             return _mapper.Map<PedidoResponseDto>(pedido);
         }
 
-        public async Task<IEnumerable<PedidoResponseDto>> Top5ProductosMasVendidos()
+        public async Task<List<ProductoResponseDto>> Top5ProductosMasVendidos()
         {
             var pedidos = await _unitOfWork.PedidoRepository.GetAll();
+              
 
-            var productosMasVendidos = pedidos
-              .GroupBy(p => p.ProductoId)
-              .Select(g => new PedidoResponseDto
-              {
-                  ProductoId = g.Key,                
-                  Cantidad = g.Sum(p => p.Cantidad) 
-              })
-              .OrderByDescending(x => x.Cantidad) 
-              .Take(5)                             
-              .ToList();
+            // var transformar = _mapper.Map<List<PedidoResponseDto>>(pedidos);
+                    var productosResponse = _mapper.Map<List<ProductoResponseDto>>(pedidos);
 
-            return productosMasVendidos;
+            var productosAgrupados = productosResponse
+                .GroupBy(p => p.Nombre) 
+                .Select(g => new ProductoResponseDto
+                {
+                    Nombre = g.Key,             
+                    Cantidad = g.Sum(p => p.Cantidad) 
+                })
+                   .Take(5)
+                   .OrderByDescending(x => x.Cantidad)
+                .ToList();
+
+
+            return productosAgrupados;
+
         }
 
-        public async Task<IEnumerable<PedidoResponseDto>> Top5ProductosMenosVendidos()
+        public async Task<List<ProductoResponseDto>> Top5ProductosMenosVendidos()
         {
             var pedidos = await _unitOfWork.PedidoRepository.GetAll();
 
-            var productosMenosVendidos = pedidos
-              .GroupBy(p => p.ProductoId)
-              .Select(g => new PedidoResponseDto
-              {
-                  ProductoId = g.Key,
-                  Cantidad = g.Sum(p => p.Cantidad)
-              })
-              .OrderBy(x => x.Cantidad)
-              .Take(5)
-              .ToList();
 
-            return productosMenosVendidos;
+            // var transformar = _mapper.Map<List<PedidoResponseDto>>(pedidos);
+            var productosResponse = _mapper.Map<List<ProductoResponseDto>>(pedidos);
+
+            var productosAgrupados = productosResponse
+                .GroupBy(p => p.Nombre)
+                .Select(g => new ProductoResponseDto
+                {
+                    Nombre = g.Key,
+                    Cantidad = g.Sum(p => p.Cantidad)
+                })
+                   .Take(5)
+                   .OrderBy(x => x.Cantidad)
+                .ToList();
+
+
+            return productosAgrupados;
         }
 
         public async Task<IEnumerable<Pedidos>> PedidosFueraDeTiempo()
