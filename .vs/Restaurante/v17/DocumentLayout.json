@@ -15,6 +15,10 @@
       "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\services\\interfaces\\ipedidosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\controllers\\comandacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\controllers\\comandacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|d:\\facultad\\labapp web servidor\\api-la-comanda\\restaurante\\services\\pedidosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D790342-3130-4C88-81F2-20E608A0A541}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\services\\pedidosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -62,8 +66,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComandaController.cs",
+              "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Controllers\\ComandaController.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Controllers\\ComandaController.cs",
+              "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Controllers\\ComandaController.cs",
+              "RelativeToolTip": "Restaurante\\Controllers\\ComandaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:56:17.773Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -79,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ProductoRepository.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\ProductoRepository.cs",
               "RelativeDocumentMoniker": "Restaurante\\Repository\\ProductoRepository.cs",
@@ -87,12 +104,11 @@
               "RelativeToolTip": "Restaurante\\Repository\\ProductoRepository.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:57:51.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T23:57:51.448Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Pedidos.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Entities\\Pedidos.cs",
               "RelativeDocumentMoniker": "Restaurante\\Entities\\Pedidos.cs",
@@ -100,12 +116,11 @@
               "RelativeToolTip": "Restaurante\\Entities\\Pedidos.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:53:55.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T23:53:55.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Productos.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Entities\\Productos.cs",
               "RelativeDocumentMoniker": "Restaurante\\Entities\\Productos.cs",
@@ -113,12 +128,11 @@
               "RelativeToolTip": "Restaurante\\Entities\\Productos.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:53:42.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T23:53:42.4Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "EmpleadoPedidoRepository.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\EmpleadoPedidoRepository.cs",
               "RelativeDocumentMoniker": "Restaurante\\Repository\\EmpleadoPedidoRepository.cs",
@@ -126,12 +140,11 @@
               "RelativeToolTip": "Restaurante\\Repository\\EmpleadoPedidoRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:50:54.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T23:50:54.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "EmpleadoSectorOperacionDto.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\DTo\\EmpleadoSectorOperacionDto.cs",
               "RelativeDocumentMoniker": "Restaurante\\DTo\\EmpleadoSectorOperacionDto.cs",
@@ -139,12 +152,11 @@
               "RelativeToolTip": "Restaurante\\DTo\\EmpleadoSectorOperacionDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:48:28.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T23:48:28.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AutoMapperProfile.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Profiles\\AutoMapperProfile.cs",
               "RelativeDocumentMoniker": "Restaurante\\Profiles\\AutoMapperProfile.cs",
@@ -152,12 +164,11 @@
               "RelativeToolTip": "Restaurante\\Profiles\\AutoMapperProfile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:49:53.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T23:49:53.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ProductoResponseDto.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\DTo\\ProductoResponseDto.cs",
               "RelativeDocumentMoniker": "Restaurante\\DTo\\ProductoResponseDto.cs",
@@ -165,12 +176,11 @@
               "RelativeToolTip": "Restaurante\\DTo\\ProductoResponseDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:49:13.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T23:49:13.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ProductoDto.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\DTo\\ProductoDto.cs",
               "RelativeDocumentMoniker": "Restaurante\\DTo\\ProductoDto.cs",
@@ -178,12 +188,11 @@
               "RelativeToolTip": "Restaurante\\DTo\\ProductoDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:48:40.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T23:48:40.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IPedidoRepository.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Repository\\Interfaces\\IPedidoRepository.cs",
               "RelativeDocumentMoniker": "Restaurante\\Repository\\Interfaces\\IPedidoRepository.cs",
@@ -191,8 +200,7 @@
               "RelativeToolTip": "Restaurante\\Repository\\Interfaces\\IPedidoRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:34:18.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T23:34:18.685Z"
             },
             {
               "$type": "Document",
@@ -202,7 +210,7 @@
               "RelativeDocumentMoniker": "Restaurante\\Services\\Interfaces\\IPedidosService.cs",
               "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Services\\Interfaces\\IPedidosService.cs",
               "RelativeToolTip": "Restaurante\\Services\\Interfaces\\IPedidosService.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAWwBEAAABPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T23:33:41.827Z",
               "EditorCaption": ""
@@ -215,14 +223,14 @@
               "RelativeDocumentMoniker": "Restaurante\\Controllers\\InformesController.cs",
               "ToolTip": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Controllers\\InformesController.cs",
               "RelativeToolTip": "Restaurante\\Controllers\\InformesController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAEkAAAALAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T23:32:45.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PedidosService.cs",
               "DocumentMoniker": "D:\\facultad\\LabApp web Servidor\\api-la-comanda\\Restaurante\\Services\\PedidosService.cs",
               "RelativeDocumentMoniker": "Restaurante\\Services\\PedidosService.cs",
@@ -230,8 +238,7 @@
               "RelativeToolTip": "Restaurante\\Services\\PedidosService.cs",
               "ViewState": "AQIAAHsAAAAAAAAAAAAWwIQAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T15:23:39.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T15:23:39.903Z"
             }
           ]
         }
